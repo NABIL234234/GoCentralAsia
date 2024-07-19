@@ -1,0 +1,17 @@
+
+.tour_type_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 292px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+
+
+  h5 {
+    color: white;
+    font-size:24px;
+    font-weight: 700;
+  }
+}
