@@ -1,0 +1,51 @@
+.reason {
+    margin-top: 200px;
+    margin-bottom: 180px;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.central_asia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.central_asia_img  {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.central_asia_adaptive {
+    display: none;
+    width: 358px;
+    height: 241px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+@media (max-width: 650px) {
+    .central_asia_img {
+        display: none;
+    }
+
+    .central_asia_adaptive {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container {
+        padding: 0 20px;
+    }
+}

@@ -1,105 +1,59 @@
-import './Offers.scss'
-
-//components
+import styles from './Offers.module.css';
 import Title from "../../../components/Title/Title.tsx";
 import SeeMore from "../../../components/buttons/SeeMore/SeeMore.tsx";
+import OffersTourCard from "../../../components/OffersTourCard/OffersTourCard.tsx";
 
-//images
-import TourImg from "../../../assets/Images/Tour.png";
-
-//icons
-import { MdAccessTimeFilled } from "react-icons/md";
-import { RiMapPinFill } from "react-icons/ri";
+const tourData = [
+  {
+    id: 1,
+    title: "Alai Heights, Kyrgyzstan",
+    description: "Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.",
+    oldPrice: "$1300",
+    newPrice: "$1105",
+    discount: "20% Off",
+  },
+  {
+    id: 2,
+    title: "Alai Heights, Kyrgyzstan",
+    description: "Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.",
+    oldPrice: "$1300",
+    newPrice: "$1105",
+    discount: "20% Off",
+  },
+  {
+    id: 3,
+    title: "Alai Heights, Kyrgyzstan",
+    description: "Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.",
+    oldPrice: "$1300",
+    newPrice: "$1105",
+    discount: "20% Off",
+  },
+  // Добавьте другие данные по необходимости
+];
 
 function Offers() {
   return (
-    <div className="group_tour">
-      <div className="container">
+    <div className={styles.offers_section}>
+      <div className={styles.container}>
         <Title
-          mainText="MOST POPULAR TOURS"
-          paragraph="Discover our top-rated and highly sought-after tours that have captured the hearts of travelers worldwide."
+          mainText="Special offers for you"
+          paragraph="Exclusive travel offers and discounts await"
         />
-        <div className="tour_cards">
-          <div className="tour_card">
-            <img src={TourImg} alt="Alai Heights, Kyrgyzstan"/>
-            <div className="tour_info_block">
-              <div className="days">
-                <MdAccessTimeFilled/>
-                <h5>7D/6N</h5>
-              </div>
-              |
-              <div className="country_point">
-                <RiMapPinFill/>
-                <h5>Kyrgyzstan</h5>
-              </div>
-            </div>
-            <div className="tour_desc">
-              <h4>Alai Heights, Kyrgyzstan</h4>
-              <p>Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.</p>
-            </div>
-            <div className="offer_badge">
-              <span>20% Off</span>
-            </div>
-            <div className="price">
-              <span className="price_title">Price:</span>
-              <span className="old_price">$1300</span>
-              <span className="new_price">$1105</span>
-            </div>
-          </div>
-          <div className="tour_card">
-            <img src={TourImg} alt="Alai Heights, Kyrgyzstan"/>
-            <div className="tour_info_block">
-              <div className="days">
-                <MdAccessTimeFilled />
-                <h5>7D/6N</h5>
-              </div>
-              |
-              <div className="country_point">
-                <RiMapPinFill />
-                <h5>Kyrgyzstan</h5>
-              </div>
-            </div>
-            <div className="tour_desc">
-              <h4>Alai Heights, Kyrgyzstan</h4>
-              <p>Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.</p>
-            </div>
-            <div className="offer_badge">
-              <span>20% Off</span>
-            </div>
-            <div className="price">
-              <span className="price_title">Price:</span>
-              <span className="old_price">$1300</span>
-              <span className="new_price">$1105</span>
-            </div>
-          </div>
-          <div className="tour_card">
-            <img src={TourImg} alt="Alai Heights, Kyrgyzstan"/>
-            <div className="tour_info_block">
-              <div className="days">
-              <MdAccessTimeFilled />
-                <h5>7D/6N</h5>
-              </div>
-              |
-              <div className="country_point">
-                <RiMapPinFill />
-                <h5>Kyrgyzstan</h5>
-              </div>
-            </div>
-            <div className="tour_desc">
-              <h4>Alai Heights, Kyrgyzstan</h4>
-              <p>Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.</p>
-            </div>
-            <div className="offer_badge">
-              <span>20% Off</span>
-            </div>
-            <div className="price">
-              <span className="price_title">Price:</span>
-              <span className="old_price">$1300</span>
-              <span className="new_price">$1105</span>
-            </div>
-          </div>
+        <div className={styles.tour_cards}>
+          {tourData.map((tour) => (
+            <OffersTourCard
+              key={tour.id}
+              title={tour.title}
+              description={tour.description}
+              oldPrice={tour.oldPrice}
+              newPrice={tour.newPrice}
+              discount={tour.discount}
+            />
+          ))}
         </div>
-        <SeeMore title="See More" />
+        <div className={styles.button_container}>
+          <SeeMore title="See More" className={styles.button} />
+        </div>
       </div>
     </div>
   );

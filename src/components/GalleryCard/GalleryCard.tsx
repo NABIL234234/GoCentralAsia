@@ -1,18 +1,18 @@
 import React from 'react';
-import './GalleryCard.scss'
+import styles from './GalleryCard.module.css';
 
-type TourTypesCardProps = {
+interface GalleryCardProps {
   backgroundImage: string;
+  className?: string;
 }
 
-const TourTypesCard: React.FC<TourTypesCardProps> = ({ backgroundImage}) => {
-  const style = {
-    backgroundImage: `url(${backgroundImage})`
-  }
+const GalleryCard: React.FC<GalleryCardProps> = ({ backgroundImage, className }) => {
   return (
-    <div className="tour_type_card" style={style}>
-    </div>
+    <div
+      className={`${styles.gallery_card} ${className}`}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    />
   );
 };
 
-export default TourTypesCard;
+export default GalleryCard;

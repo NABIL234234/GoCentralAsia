@@ -1,0 +1,73 @@
+/* CentralAsiaTours.module.css */
+.central_asia_tours {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 310px;
+}
+
+.central_asia_tours_adaptive {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.asia_images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.River {
+    position: absolute;
+    z-index: 10;
+    top: 37.5%;
+    left: 37.8%;
+    transform: translateX(-50%);
+}
+
+.Mountain {
+    margin-left: 300px;
+}
+
+
+@media  (max-width: 1150px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .central_asia_tours {
+        display: none;
+    }
+
+    .central_asia_tours_adaptive {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .central_asia_adaptive_title,
+    .central_asia_adaptive_text {
+        text-align: center;
+    }
+
+    .central_asia_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
+        max-width: 358px;
+    }
+}

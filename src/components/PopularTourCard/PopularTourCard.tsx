@@ -1,36 +1,24 @@
-// TourCard.tsx
 import React from 'react';
-import styles from './TourCard.module.css';
+import styles from './PopularTourCard.module.css';
 import TourImg from "../../assets/Images/Tour.png";
 import { MdAccessTimeFilled } from 'react-icons/md';
-import { IoMdPeople } from 'react-icons/io';
 import { RiMapPinFill } from 'react-icons/ri';
 
-type TourCardProps = {
-  price?: string;
+type PopularTourCardProps = {
   days: string;
-  people?: string;
   countryPoint: string;
   tourDescription: string;
-  className?: string; // Новый пропс для стилей
+  className?: string;
 };
 
-const TourCard: React.FC<TourCardProps> = ({ price, days, people, countryPoint, tourDescription, className }) => {
+const PopularTourCard: React.FC<PopularTourCardProps> = ({ days, countryPoint, tourDescription, className }) => {
   return (
     <div className={`${styles.tour_card} ${className}`}>
-      <img src={TourImg} className={styles.tour_card_img} alt="Tour" />
-      <div className={styles.price}>
-        <h4>{price}</h4>
-      </div>
+      <img src={TourImg} alt="Tour" className={styles.tour_card_img} />
       <div className={styles.tour_info_block}>
         <div className={styles.days}>
           <MdAccessTimeFilled />
           <h5>{days}</h5>
-        </div>
-        |
-        <div className={styles.people}>
-          <IoMdPeople />
-          <h5>{people}</h5>
         </div>
         |
         <div className={styles.country_point}>
@@ -46,4 +34,4 @@ const TourCard: React.FC<TourCardProps> = ({ price, days, people, countryPoint, 
   );
 };
 
-export default TourCard;
+export default PopularTourCard;

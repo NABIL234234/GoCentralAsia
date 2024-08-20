@@ -1,25 +1,43 @@
-import './GroupTours.scss'
-
-//components
+import styles from './GroupTours.module.css';
 import Title from "../../../components/Title/Title.tsx";
-
-//images
-import TourImg from "../../../assets/Images/Tour.png"
-
-//icons
-import {MdAccessTimeFilled} from "react-icons/md";
-import {IoMdPeople} from "react-icons/io";
-import {RiMapPinFill} from "react-icons/ri";
+import TourCard from "../../../components/TourCard/TourCard.tsx";
 import SeeMore from "../../../components/buttons/SeeMore/SeeMore.tsx";
+
+const tourData = [
+  {
+    price: "$1900/per person",
+    days: "7D/6N",
+    people: "People: 5",
+    countryPoint: "Kyrgyzstan",
+    tourDescription: "Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.",
+  },
+  {
+    price: "$1900/per person",
+    days: "7D/6N",
+    people: "People: 5",
+    countryPoint: "Kyrgyzstan",
+    tourDescription: "Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.",
+  },
+  {
+    price: "$1900/per person",
+    days: "7D/6N",
+    people: "People: 5",
+    countryPoint: "Kyrgyzstan",
+    tourDescription: "Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.",
+  },
+  // добавьте другие данные по необходимости
+];
 
 function GroupTours() {
   return (
-    <div className="group_tours">
-      <div className="container">
-        <Title mainText="Group TOURS"
-               paragraph="Discover our top-rated and highly sought-after tours that have captured the hearts of travelers worldwide."/>
+    <div className={styles.group_tours}>
+      <div className={styles.container}>
+        <Title
+          mainText="Group TOURS"
+          paragraph="Discover our top-rated and highly sought-after tours that have captured the hearts of travelers worldwide."
+        />
         <div>
-          <div className="country_category_list">
+          <div className={styles.country_category_list}>
             <h5>Multi-country</h5>
             <h5>Kyrgyzstan</h5>
             <h5>Kazakhstan</h5>
@@ -27,87 +45,22 @@ function GroupTours() {
             <h5>Tajikistan</h5>
             <h5>Turkmenistan</h5>
           </div>
-          <div className="tour_cards">
-            <div className="tour_card">
-              <img src={TourImg} alt=""/>
-              <div className="price">
-                <h4>$1900/per person</h4>
-              </div>
-              <div className="tour_info_block">
-                <div className="days">
-                  <MdAccessTimeFilled/>
-                  <h5>7D/6N</h5>
-                </div>
-                |
-                <div className="people">
-                  <IoMdPeople/>
-                  <h5>People: 5</h5>
-                </div>
-                |
-                <div className="country_point">
-                  <RiMapPinFill/>
-                  <h5>Kyrgyzstan</h5>
-                </div>
-              </div>
-              <div className="tour_desc">
-                <h4>Alai Heights, Kyrgyzstan</h4>
-                <p>Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.</p>
-              </div>
-            </div>
-            <div className="tour_card">
-              <img src={TourImg} alt=""/>
-              <div className="price">
-                <h4>$1900/per person</h4>
-              </div>
-              <div className="tour_info_block">
-                <div className="days">
-                  <MdAccessTimeFilled/>
-                  <h5>7D/6N</h5>
-                </div>
-                |
-                <div className="people">
-                  <IoMdPeople/>
-                  <h5>People: 5</h5>
-                </div>
-                |
-                <div className="country_point">
-                  <RiMapPinFill/>
-                  <h5>Kyrgyzstan</h5>
-                </div>
-              </div>
-              <div className="tour_desc">
-                <h4>Alai Heights, Kyrgyzstan</h4>
-                <p>Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.</p>
-              </div>
-            </div>
-            <div className="tour_card">
-              <img src={TourImg} alt=""/>
-              <div className="price">
-                <h4>$1900/per person</h4>
-              </div>
-              <div className="tour_info_block">
-                <div className="days">
-                  <MdAccessTimeFilled/>
-                  <h5>7D/6N</h5>
-                </div>
-                |
-                <div className="people">
-                  <IoMdPeople/>
-                  <h5>People: 5</h5>
-                </div>
-                |
-                <div className="country_point">
-                  <RiMapPinFill/>
-                  <h5>Kyrgyzstan</h5>
-                </div>
-              </div>
-              <div className="tour_desc">
-                <h4>Alai Heights, Kyrgyzstan</h4>
-                <p>Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences.</p>
-              </div>
-            </div>
+          <div className={styles.tour_cards}>
+            {tourData.map((tour, index) => (
+              <TourCard
+                key={index}
+                className={styles[`tour_card_${index + 1}`]}
+                price={tour.price}
+                days={tour.days}
+                people={tour.people}
+                countryPoint={tour.countryPoint}
+                tourDescription={tour.tourDescription}
+              />
+            ))}
           </div>
-          <SeeMore title="See More" />
+          <div className={styles.button_container}>
+            <SeeMore title="See More" className={styles.button} />
+          </div>
         </div>
       </div>
     </div>

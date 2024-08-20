@@ -1,21 +1,18 @@
 import React from 'react';
+import styles from './Title.module.css';
 
-import './Title.scss'
+type TitleProps = {
+  mainText: string;
+  paragraph: string;
+};
 
-type Title = {
-  mainText: string,
-  paragraph: string
-}
-
-const Title: React.FC<Title> = ({mainText, paragraph}) => {
+const Title: React.FC<TitleProps> = ({ mainText, paragraph }) => {
   return (
-    <div className="title_text">
+    <div className={styles.titleText}>
       <h2>{mainText}</h2>
-      <p>
-        {paragraph}
-      </p>
+      <p>{paragraph}</p>
     </div>
   );
-}
+};
 
 export default Title;

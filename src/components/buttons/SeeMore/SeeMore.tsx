@@ -1,17 +1,16 @@
 import React from "react";
-import './SeeMore.scss'
+import style from './SeeMore.module.css';
 
 type SeeMoreProps = {
-  title: string
-}
+  title: string;
+  className?: string;
+};
 
-const SeeMore: React.FC<SeeMoreProps> = ({title}) => {
+const SeeMore: React.FC<SeeMoreProps> = ({ title, className }) => {
   return (
-    <div className="button_container">
-      <button>
-        {title}
-      </button>
-    </div>
+    <button className={`${style.button} ${className || ''}`}>
+      {title}
+    </button>
   );
 };
 

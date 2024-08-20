@@ -1,30 +1,26 @@
 import React from 'react';
-import './AdventureComponent.scss'
-
-//icons
-import { IconType } from 'react-icons'; // Import IconType from react-icons
-import {IoMdArrowDropdown} from "react-icons/io";
+import styles from './AdventureComponent.module.css';
+import { IconType } from 'react-icons';
+import { IoMdArrowDropdown } from "react-icons/io";
 
 type AdventureComponentProps = {
-  icon: IconType,
-  title: string,
+  icon: IconType;
+  title: string;
+};
 
-}
-
-const AdventureComponent: React.FC<AdventureComponentProps> = ({icon: Icon, title}) => {
+const AdventureComponent: React.FC<AdventureComponentProps> = ({ icon: Icon, title }) => {
   return (
-    <div className="Destination">
-      <div className="destination-title">
+    <div className={styles.destination}>
+      <div className={styles.destinationTitle}>
         <Icon />
         <h5>{title}</h5>
       </div>
-      <div className="destination-select">
+      <div className={styles.destinationSelect}>
         <h5>Choose</h5>
-        <IoMdArrowDropdown/>
+        <IoMdArrowDropdown  />
       </div>
     </div>
   );
-}
-
+};
 
 export default AdventureComponent;

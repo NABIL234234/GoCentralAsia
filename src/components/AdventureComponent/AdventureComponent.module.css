@@ -1,0 +1,38 @@
+.adventureSorting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.destinationTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 20px;
+}
+
+.destinationTitle h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.destinationSelect {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Изменено */
+  padding-left: 16px;
+  background-color: #F2F2F2;
+  flex-grow: 1; /* Добавлено */
+  height: 50px;
+  border-radius: 8px;
+}

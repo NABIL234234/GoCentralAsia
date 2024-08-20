@@ -1,0 +1,20 @@
+.central_asia_tours_adaptive {
+    margin-top: 426px
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.central_asia_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.central_asia_container p {
+  max-width: 358px;
+}

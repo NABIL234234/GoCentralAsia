@@ -1,26 +1,27 @@
-import './Footer.scss';
 
-//images
-import Logo from "../../assets/Images/Logo.png"
+import styles from './Footer.module.css';
 
-//icons
+// images
+import Logo from "../../assets/Images/Logo.png";
+
+// icons
 import { FaFacebookF, FaInstagram, FaTelegramPlane, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 
 function Footer() {
   return (
-    <div className="Footer">
-      <div className="footer-container">
-        <div className="footer-logo">
+    <div className={styles.footer}>
+      <div className={styles.footerContainer}>
+        <div className={styles.footerLogo}>
           <img src={Logo} alt="Gocentralasia Logo" />
-          <p>Gocentralasia</p>
+          <span>Gocentralasia</span>
         </div>
-        <div className="footer-info">
+        <div className={styles.footerInfo}>
           <h4>Contact Information</h4>
-          <p><AiOutlinePhone /> +996 700 01 55 99</p>
-          <p><AiOutlineMail /> logo@gmail.com</p>
+          <a><AiOutlinePhone /> +996 700 01 55 99</a>
+          <a><AiOutlineMail /> logo@gmail.com</a>
         </div>
-        <div className="footer-links">
+        <div className={styles.footerLinks}>
           <h4>Main</h4>
           <ul>
             <li><a href="/tours">Tours</a></li>
@@ -30,7 +31,7 @@ function Footer() {
             <li><a href="/contact">Contact</a></li>
           </ul>
         </div>
-        <div className="footer-links">
+        <div className={styles.footerLinks}>
           <h4>Travel Destination</h4>
           <ul>
             <li><a href="/kyrgyzstan">Kyrgyzstan</a></li>
@@ -40,7 +41,7 @@ function Footer() {
             <li><a href="/turkmenistan">Turkmenistan</a></li>
           </ul>
         </div>
-        <div className="footer-links">
+        <div className={styles.footerLinks}>
           <h4>Policy</h4>
           <ul>
             <li><a href="/payment-policy">Payment policy</a></li>
@@ -50,9 +51,9 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div className="footer-bottom">
+      <div className={styles.footerBottom}>
         <p>Copyright © 2024 Name All rights reserved</p>
-        <div className="footer-social">
+        <div className={styles.footerSocial}>
           <FaFacebookF />
           <FaWhatsapp />
           <FaTelegramPlane />

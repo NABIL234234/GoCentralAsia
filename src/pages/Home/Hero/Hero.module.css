@@ -1,0 +1,434 @@
+.hero {
+    width: 100%;
+    background-image: url('../../../assets/Images/Hero_img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.upperHeader {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-top: 16px;
+}
+
+.contactContainer {
+    display: flex;
+}
+
+.contactContainer a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.flex, .flex2, .flex3 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.flex2, .flex3 {
+    padding-left: 36px;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 19px;
+}
+
+.header {
+    margin-top: 33px;
+}
+
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    color: white;
+}
+
+.logoContainer h2 {
+    font-weight: 300;
+}
+
+.navigationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.navigationContainer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigationContainer li {
+    position: relative;
+}
+
+.navigationContainer a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+.navigationContainer a:hover {
+    background-color: #1CAC78;
+    color: white;
+    border-radius: 5px;
+}
+
+.navigationContainer span {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.dropdownModals {
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    animation: slideDown 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.dropdownModalDestination ul, .dropdownModalTour ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.dropdownModalDestination li, .dropdownModalTour li {
+    padding: 10px 20px;
+}
+
+.dropdownModalDestination a, .dropdownModalTour a {
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdownModalDestination a:hover, .dropdownModalTour a:hover {
+    background-color: #1CAC78;
+    color: white;
+}
+
+.searchLanguageContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.searchContainer {
+    color: white;
+    font-size: 30px;
+}
+
+
+.languageContainer {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+
+.searchIcon2  {
+    display: none;
+}
+
+.languageContainer h3 {
+    color: white;
+}
+
+.languageContainer .dropDown {
+    font-size: 20px;
+    color: white;
+}
+
+.landingText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 140px;
+    padding-bottom: 290px;
+}
+
+.landingText h1 {
+    color: white;
+    font-family: "Bebas Neue";
+    font-size: 72px;
+    font-weight: 400;
+    margin: 0;
+    transition: font-size 0.3s ease, margin-top 0.3s ease;
+}
+
+.landingText p {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+.landingText button {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: black;
+    background-color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.landingText button:hover {
+    background-color: #17a669;
+    color: white;
+}
+
+.adventure {
+    position: absolute;
+    top: 660px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    border-radius: 8px;
+    padding: 36px;
+    transition: width 0.3s ease, padding 0.3s ease;
+}
+
+
+
+.adventureTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.adventureTitle h3 {
+    margin: 0;
+}
+
+.adventureSorting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+    transition: flex-direction 0.3s ease, gap 0.3s ease;
+}
+
+.adventureSorting button {
+    width: 230px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #1CAC78;
+    padding: 13px 98.5px;
+    transition: background-color 0.3s ease, width 0.3s ease;
+}
+
+.adventureSorting button:hover {
+    background-color: #17a669;
+}
+
+.mobileNav {
+    display: flex;
+}
+
+.burger-btn {
+    width: 35px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 20;
+    transition: all 0.3s ease;
+    background: transparent;
+    border: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.line {
+    display: block;
+    width: 35px;
+    height: 2.7px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.burger-btn.open .line1 {
+    transform: rotate(45deg) translate(8px, 5px);
+}
+
+.burger-btn.open .line2 {
+    opacity: 0;
+}
+
+.burger-btn.open .line3 {
+    transform: rotate(-45deg) translate(8px, -6px);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Медиазапросы для различных разрешений экрана */
+@media (max-width: 1150px) {
+    .header {
+        margin-top: 0;
+    }
+
+    .headerRow {
+        padding-top: 12px;
+    }
+
+    .searchIcon2 {
+        display: block;
+    }
+
+    .adventure {
+        top: 550px;
+        width: 600px;
+        padding: 32px;
+    }
+
+    .adventureSorting {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .destinationSelect {
+        width: 100%;
+        gap: 16px;
+        justify-content: space-between;
+    }
+
+    .adventureSorting button {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .navigationContainer {
+        display: none;
+    }
+
+    .searchLanguageContainer {
+        display: none;
+    }
+
+
+    .burger-btn {
+        display: flex;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .LogoContainer h2{
+        font-size: 12px;
+    }
+
+    .upperHeader {
+        display: none;
+    }
+
+    .landingText button {
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    .adventure {
+        top: 640px;
+        width: 85%;
+        padding: 24px;
+    }
+
+    .adventureSorting {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .adventureSorting button {
+        width: 100%;
+    }
+}
+
+

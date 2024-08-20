@@ -1,0 +1,163 @@
+.unveilingCentralAsia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 310px;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.centralAsiaMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.centralAsia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 92px;
+}
+
+.centralAsiaAdaptive {
+    display: none;
+}
+
+.union1 {
+    position: absolute;
+    top: 162.2px;
+    left: 250px;
+}
+
+.union2 {
+    position: absolute;
+    top: 303.2px;
+    left: 98.8px;
+}
+
+.union3 {
+    position: absolute;
+    top: 71.2px;
+    left: 676px;
+}
+
+.union4 {
+    position: absolute;
+    top: 246px;
+    left: 780px;
+}
+
+.union5 {
+    position: absolute;
+    top: 353.2px;
+    left: 845px;
+}
+
+.line5 {
+    position: absolute;
+    top: 346.2px;
+    left: 745px;
+}
+
+
+/*square*/
+
+
+@media (max-width: 1250px) {
+    .union1 {
+        position: absolute;
+        top: 162.2px;
+        left: 200px;
+    }
+
+    .union2 {
+        position: absolute;
+        top: 303.2px;
+        left: 65px;
+    }
+
+    .union3 {
+        position: absolute;
+        top: 71.2px;
+        left: 626px;
+    }
+
+    .union4 {
+        position: absolute;
+        top: 246px;
+        left: 730px;
+    }
+
+    .union5 {
+        position: absolute;
+        top: 376.2px;
+        left: 795px;
+    }
+
+    .line5 {
+        position: absolute;
+        top: 346.2px;
+        left: 705px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .unveilingCentralAsia {
+        margin-top: 100px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .centralAsia {
+        display: none;
+    }
+
+    .centralAsiaAdaptive {
+        display: flex;
+    }
+
+
+    .union1 {
+        display: none;
+    }
+
+    .union2 {
+        display: none;
+    }
+
+    .union3 {
+        display: none;
+    }
+
+    .union4 {
+        display: none;
+    }
+
+    .union5 {
+        display: none;
+    }
+
+    .line5 {
+        display: none;
+    }
+
+    .squares {
+        display: block;
+    }
+
+    .lines {
+        display: block;
+    }
+}
+
+

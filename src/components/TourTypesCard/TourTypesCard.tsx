@@ -1,19 +1,18 @@
 import React from 'react';
-import './TourTypeCard.scss'
-
-
+import styles from './TourTypeCard.module.css';
 
 type TourTypesCardProps = {
   title: string;
   backgroundImage: string;
-}
+};
 
-const TourTypesCard: React.FC<TourTypesCardProps> = ({title , backgroundImage}) => {
+const TourTypesCard: React.FC<TourTypesCardProps> = ({ title, backgroundImage }) => {
   const style = {
     backgroundImage: `url(${backgroundImage})`
-  }
+  };
+
   return (
-    <div className="tour_type_card" style={style}>
+    <div className={styles.tourTypeCard} style={style}>
       <h5>{title}</h5>
     </div>
   );

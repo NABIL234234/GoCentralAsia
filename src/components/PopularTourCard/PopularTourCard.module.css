@@ -1,0 +1,114 @@
+.tour_card {
+    width: 100%;
+    max-width: 397px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tour_card_img {
+    width: 100%;
+    height: auto;
+}
+
+.tour_info_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 244px;
+    max-width: 360px;
+    height: 35px;
+    padding: 1px 5px;
+    position: absolute;
+    top: 304px; /* Зафиксированная позиция */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: #1CAC78;
+    border-radius: 5px;
+    z-index: 10; /* Для того чтобы блок всегда был сверху */
+}
+
+.tour_info_block div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.tour_desc {
+    margin-top: 15px;
+    padding: 12px;
+    text-align: center;
+}
+
+.tour_desc h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.tour_desc p {
+    font-size: 14px;
+    color: #333;
+}
+
+
+@media (max-width: 500px) {
+    .tour_card .price {
+        width: 60%;
+        height: 45px;
+        top: 5%;
+    }
+
+    .tour_card .tour_info_block {
+        height: 30px;
+        padding: 3px;
+    }
+
+    .tour_card .tour_desc {
+        padding: 10px;
+    }
+
+    .tour_card .tour_desc h4 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .tour_card .tour_info_block {
+        top: 300px;
+    }
+}
+
+@media (max-width: 409px) {
+    .tour_card .tour_info_block {
+        top: 290px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tour_card .tour_info_block {
+        top: 280px;
+    }
+}
+
+@media (max-width: 380px) {
+    .tour_card .tour_info_block {
+        top: 260px;
+    }
+}
+
+@media (max-width: 360px) {
+    .tour_card .tour_info_block {
+        top: 245px;
+    }
+}
+
+@media (max-width: 340px) {
+    .tour_card .tour_info_block {
+        top: 230px;
+    }
+}

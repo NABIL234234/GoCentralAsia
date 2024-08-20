@@ -1,0 +1,67 @@
+.group_tours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.country_category_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.country_category_list h5 {
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.tour_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+
+@media (max-width: 1350px) {
+    .tour_card_3 {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .tour_card_2 {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .tour_card_2,
+    .tour_card_3 {
+        display: none;
+    }
+}
