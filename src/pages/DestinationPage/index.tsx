@@ -1,6 +1,6 @@
 function Index() {
   return (
-    <div>Go central asia Now</div>
+    <div>Go central asia Now!!!</div>
   );
 }
 
