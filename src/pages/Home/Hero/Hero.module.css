@@ -326,18 +326,11 @@
 }
 
 
-.burger-btn.open .line2 {
-    opacity: 0;
-}
-
-
 
 /* Скрытие бургер-кнопки */
 .hide-burger-btn {
     display: none;
 }
-
-
 
 
 @media (max-width: 1150px) {
