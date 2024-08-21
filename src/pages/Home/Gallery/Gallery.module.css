@@ -23,6 +23,14 @@
     border-radius: 8px;
 }
 
+
+@media (max-width: 1150px) {
+    .gallery {
+        margin-top: 100px;
+    }
+}
+
+
 @media (max-width: 868px) {
     .gallery_card:nth-child(1) {
         display: none;

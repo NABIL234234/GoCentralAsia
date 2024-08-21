@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './PopularTourCard.module.css';
 import TourImg from "../../assets/Images/Tour.png";
-import { MdAccessTimeFilled } from 'react-icons/md';
-import { RiMapPinFill } from 'react-icons/ri';
+import {MdAccessTimeFilled} from 'react-icons/md';
+import {RiMapPinFill} from 'react-icons/ri';
 
 type PopularTourCardProps = {
   days: string;
@@ -11,18 +11,18 @@ type PopularTourCardProps = {
   className?: string;
 };
 
-const PopularTourCard: React.FC<PopularTourCardProps> = ({ days, countryPoint, tourDescription, className }) => {
+const PopularTourCard: React.FC<PopularTourCardProps> = ({days, countryPoint, tourDescription, className}) => {
   return (
     <div className={`${styles.tour_card} ${className}`}>
-      <img src={TourImg} alt="Tour" className={styles.tour_card_img} />
+      <img src={TourImg} alt="Tour" className={styles.tour_card_img}/>
       <div className={styles.tour_info_block}>
         <div className={styles.days}>
-          <MdAccessTimeFilled />
+          <MdAccessTimeFilled/>
           <h5>{days}</h5>
         </div>
         |
         <div className={styles.country_point}>
-          <RiMapPinFill />
+          <RiMapPinFill/>
           <h5>{countryPoint}</h5>
         </div>
       </div>

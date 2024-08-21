@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+.central_asia_container img {
+    width: 100%;
+}
+
 .central_asia_container p {
-  max-width: 358px;
+    font-weight: 400;
 }

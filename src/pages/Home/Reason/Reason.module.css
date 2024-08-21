@@ -1,6 +1,6 @@
 .reason {
     margin-top: 200px;
-    margin-bottom: 180px;
+    margin-bottom: 210px;
 }
 
 .container {
@@ -17,33 +17,32 @@
     margin-top: 36px;
 }
 
-.central_asia_img  {
-    width: 100%;
+.central_asia_img {
     object-fit: cover;
     border-radius: 8px;
 }
 
 
-.central_asia_adaptive {
-    display: none;
-    width: 358px;
-    height: 241px;
-    object-fit: cover;
-    border-radius: 8px;
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
+
+@media (max-width: 1150px) {
+    .reason {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}
 
 @media (max-width: 650px) {
     .central_asia_img {
-        display: none;
+        width: 100%;
     }
-
-    .central_asia_adaptive {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
 
     .container {
         padding: 0 20px;

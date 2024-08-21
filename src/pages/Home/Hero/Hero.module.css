@@ -19,6 +19,10 @@
     padding-top: 16px;
 }
 
+
+
+
+
 .contactContainer {
     display: flex;
 }
@@ -59,7 +63,7 @@
 
 .logoContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 12px;
     color: white;
 }
@@ -321,30 +325,21 @@
     transition: all 0.3s ease;
 }
 
-.burger-btn.open .line1 {
-    transform: rotate(45deg) translate(8px, 5px);
-}
 
 .burger-btn.open .line2 {
     opacity: 0;
 }
 
-.burger-btn.open .line3 {
-    transform: rotate(-45deg) translate(8px, -6px);
+
+
+/* Скрытие бургер-кнопки */
+.hide-burger-btn {
+    display: none;
 }
 
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* Медиазапросы для различных разрешений экрана */
+
+
 @media (max-width: 1150px) {
     .header {
         margin-top: 0;

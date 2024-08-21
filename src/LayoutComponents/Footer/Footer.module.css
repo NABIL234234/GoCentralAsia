@@ -1,164 +1,170 @@
 .footer {
-  background-color: #009c70;
-  color: white;
-  padding: 20px 0;
+    background-color: #009c70;
+    color: white;
+    padding: 20px 0;
 }
 
-.footerContainer {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px;
-  gap: 20px;
-  transition: all 0.3s ease-in-out; /* Добавлен плавный переход */
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .footerLogo {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 12px;
-  margin-right: 98.5px;
-  transition: all 0.3s ease-in-out; /* Добавлен плавный переход */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    margin-right: 98.5px;
+    transition: all 0.3s ease-in-out;
 }
 
 .footerLogo img {
-  width: 70px;
-  height: auto;
-  transition: all 0.3s ease-in-out; /* Добавлен плавный переход */
+    width: 70px;
+    height: auto;
+    transition: all 0.3s ease-in-out;
 }
 
 .footerLogo span {
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 1.5em;
-  transition: all 0.3s ease-in-out; /* Добавлен плавный переход */
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.5em;
+    transition: all 0.3s ease-in-out;
 }
 
 .footerInfo,
 .footerLinks {
-  flex: 1;
-  min-width: 200px;
-  margin-bottom: 20px;
-  transition: all 0.3s ease-in-out; /* Добавлен плавный переход */
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .footerInfo h4,
 .footerLinks h4 {
-  margin-bottom: 10px;
-  font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .footerInfo p,
 .footerLinks p,
 .footerInfo ul,
 .footerLinks ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .footerInfo ul li,
 .footerLinks ul li {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .footerInfo ul li a,
 .footerLinks ul li a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease-in-out; /* Плавный переход цвета */
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
 .footerInfo ul li a:hover,
 .footerLinks ul li a:hover {
-  color: #aaaaaa;
+    color: #aaaaaa;
 }
 
 .footerBottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 10px 20px;
-  transition: all 0.3s ease-in-out; /* Добавлен плавный переход */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .footerSocial {
-  display: flex;
-  gap: 1em;
-  transition: all 0.3s ease-in-out; /* Добавлен плавный переход */
+    display: flex;
+    gap: 1em;
+    transition: all 0.3s ease-in-out;
 }
 
 .footerBottom p {
-  margin: 0;
+    margin: 0;
 }
 
-/* Плавный адаптив для мобильных устройств */
+
 @media (max-width: 768px) {
-  .footerContainer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 15px;
-  }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
 
-  .footerLogo {
-    margin-right: 0;
-  }
+    .footerLogo {
+        margin-right: 0;
+    }
 
-  .footerLogo img {
-    width: 60px;
-  }
+    .footerLogo img {
+        width: 60px;
+    }
 
-  .footerBottom {
-    flex-direction: column;
-    text-align: center;
-  }
+    .footerBottom {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  .footerSocial {
-    margin-top: 10px;
-  }
+    .footerSocial {
+        margin-top: 10px;
+    }
 }
+
+@media (min-width: 681px) and (max-width: 1024px) {
+    .footerContainer {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .footerLogo img {
+        width: 65px;
+    }
+
+    .footerLogo span {
+        font-size: 1.4em;
+    }
+
+    .footerBottom {
+        padding: 15px;
+    }
+
+    .footerSocial {
+        gap: 1.5em;
+    }
+}
+
 
 @media (max-width: 680px) {
-  .footerLogo img {
-    width: 50px;
-  }
+    .footerLogo img {
+        width: 50px;
+    }
 
-  .footerLogo span {
-    font-size: 1.2em;
-  }
+    .footerLogo span {
+        font-size: 1.2em;
+    }
 
-  .footerContainer {
-    padding: 10px;
-  }
+    .container {
+        padding: 10px;
+    }
 
-  .footerBottom {
-    padding: 10px;
-  }
+    .footerBottom {
+        padding: 10px;
+    }
+
+    .footerInfo {
+        display: none;
+    }
 }
 
-/* Адаптивные стили для планшетов (от 681px до 1024px) */
-@media (min-width: 681px) and (max-width: 1024px) {
-  .footerContainer {
-    padding: 15px;
-    gap: 10px;
-  }
 
-  .footerLogo img {
-    width: 65px;
-  }
-
-  .footerLogo span {
-    font-size: 1.4em;
-  }
-
-  .footerBottom {
-    padding: 15px;
-  }
-
-  .footerSocial {
-    gap: 1.5em;
-  }
-}

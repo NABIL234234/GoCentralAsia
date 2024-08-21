@@ -19,6 +19,7 @@
     align-items: center;
     gap: 22px;
     flex-wrap: wrap;
+    margin-bottom: 24px;
 }
 
 .country_category_list h5 {
@@ -44,12 +45,29 @@
 
 
 @media (max-width: 1350px) {
+
     .tour_card_3 {
         display: none;
     }
 }
 
+
+@media (max-width: 1150px) {
+    .group_tours {
+        margin-top: 100px;
+    }
+}
+
 @media (max-width: 700px) {
+
+    .country_category_list {
+        gap: 12px;
+    }
+
+    .country_category_list h5 {
+        margin: 0;
+    }
+
     .tour_card_2 {
         display: none;
     }

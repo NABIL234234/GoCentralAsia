@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 310px;
+    width: 100%;
 }
 
 .container {
@@ -124,8 +125,9 @@
 
     .centralAsiaAdaptive {
         display: flex;
+        width: 65%;
+        margin-top: 24px;
     }
-
 
     .union1 {
         display: none;

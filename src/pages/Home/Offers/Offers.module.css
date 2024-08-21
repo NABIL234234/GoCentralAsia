@@ -1,6 +1,6 @@
 .offers_section {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 200px;
     background-color: #1CAC78;
@@ -17,7 +17,7 @@
 .tour_cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 24px;
     padding-top: 50px;
@@ -131,7 +131,7 @@
 }
 
 /* Адаптивные стили */
-@media (max-width: 1450px) {
+@media (max-width: 1350px) {
     .tour_cards > :nth-child(3) {
         display: none;
     }

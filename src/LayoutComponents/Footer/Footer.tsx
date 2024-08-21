@@ -11,7 +11,7 @@ import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
 function Footer() {
   return (
     <div className={styles.footer}>
-      <div className={styles.footerContainer}>
+      <div className={styles.container}>
         <div className={styles.footerLogo}>
           <img src={Logo} alt="Gocentralasia Logo" />
           <span>Gocentralasia</span>

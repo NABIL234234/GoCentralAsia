@@ -14,10 +14,10 @@ const CentralAsiaToursAdaptive = ({className}: CentralAsiaToursAdaptiveProps) =>
     <div className={className}>
       <div className={styles.container}>
         <div className={styles.central_asia_tours_adaptive}>
-          <div>
+
             <Title mainText="ABOUT US"
                    paragraph="Welcome to [Travel Website Name], where wanderlust meets seamless travel experiences. We are passionate about crafting unforgettable journeys that immerse you in the beauty and culture of destinations around the globe. With a dedicated team of travel experts, we strive to provide personalized service, attention to detail, and insider knowledge to ensure your trip exceeds expectations. "/>
-          </div>
+
           <div className={styles.central_asia_container}>
             <img src={River} alt=""/>
             <p>Whether you're seeking adventure, relaxation, or cultural enrichment, trust us to turn your travel dreams

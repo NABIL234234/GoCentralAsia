@@ -10,40 +10,38 @@
 
 .tour_types_grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px; /* Добавляем равномерное расстояние между картами */
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
     margin-top: 24px;
+    justify-items: stretch;
 }
 
-/* Адаптивность для экранов до 1150px */
 @media (max-width: 1150px) {
+
+    .tour_types {
+        margin-top: 100px;
+    }
+
     .tour_types_grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
-/* Адаптивность для экранов до 950px */
 @media (max-width: 950px) {
     .tour_types_grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px; /* Обновляем gap для меньших экранов */
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
     }
 }
 
-/* Адаптивность для экранов до 600px */
 @media (max-width: 600px) {
-    .container {
-        padding: 0 16px;
-    }
-
     .tour_types_grid {
         grid-template-columns: 1fr;
-        gap: 16px; /* Обновляем gap для еще меньших экранов */
+        gap: 16px;
     }
 }
 
 
-/* Адаптивность для экранов до 650px */
 @media (max-width: 600px) {
 
     .container {
@@ -60,7 +58,7 @@
     }
 }
 
-/* Дополнительные улучшения */
+
 .tour_type {
     display: flex;
     justify-content: center;

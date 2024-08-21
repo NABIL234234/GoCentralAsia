@@ -21,14 +21,11 @@
 }
 
 
-
 @media (max-width: 650px) {
-  .titleText h2 {
 
-  }
 
   .titleText p {
-    max-width: 358px;
+
     font-size: 16px;
   }
 }

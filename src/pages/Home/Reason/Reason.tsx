@@ -8,7 +8,6 @@ import SeeMore from "../../../components/buttons/SeeMore/SeeMore.tsx";
 import ReasonImage from "../../../assets/Images/central_asia.png";
 
 
-
 function Reason() {
   return (
     <div className={styles.reason}>
@@ -19,9 +18,10 @@ function Reason() {
         />
         <div className={styles.central_asia}>
           <img src={ReasonImage} className={styles.central_asia_img} alt="Central Asia"/>
-          <img src={ReasonImage} className={styles.central_asia_adaptive} alt="Central Asia"/>
         </div>
-        <SeeMore title="About Us"/>
+        <div className={styles.button_container}>
+          <SeeMore title="About Us"/>
+        </div>
       </div>
     </div>
   );
