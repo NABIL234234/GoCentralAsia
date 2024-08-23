@@ -33,13 +33,13 @@
     height: 35px;
     padding: 1px 5px;
     position: absolute;
-    top: 304px; /* Зафиксированная позиция */
+    top: 304px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
     background-color: #1CAC78;
     border-radius: 5px;
-    z-index: 10; /* Для того чтобы блок всегда был сверху */
+    z-index: 10;
 }
 
 .tour_card .tour_info_block .days,

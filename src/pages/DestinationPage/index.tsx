@@ -1,6 +1,12 @@
+
+import styles from '../../globalStyle.module.css'
+import InfoCountry from "./InfoCountry/InfoCountry.tsx";
+
 function Index() {
   return (
-    <div>Go central asia Now!!!!!!</div>
+    <div className={styles.container}>
+      <InfoCountry />
+    </div>
   );
 }
 

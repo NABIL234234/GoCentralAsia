@@ -1,0 +1,24 @@
+.titleText {
+    margin-top: 40px;
+    display: block;
+}
+
+.tour_cards_groupTours {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.tour_card_info {
+    width: 100%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.customInfoBlock {
+    top: 225px !important;
+    width: 223px !important;
+}

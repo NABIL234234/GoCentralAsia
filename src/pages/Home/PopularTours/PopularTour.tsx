@@ -43,6 +43,7 @@ function PopularTour() {
                 days={tour.days}
                 countryPoint={tour.countryPoint}
                 tourDescription={tour.tourDescription}
+                className={styles.popularCardStyle1}
               />
             ))}
           </div>
