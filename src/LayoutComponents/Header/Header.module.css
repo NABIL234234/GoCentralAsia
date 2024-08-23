@@ -5,7 +5,7 @@
 .container {
     max-width: 1360px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 100px;
 }
 
 .upperHeader {
@@ -69,7 +69,7 @@
     align-items: center;
     gap: 12px;
     position: relative;
-    margin-left: 6%;
+    margin-left: 9%;
 }
 
 .navigationContainer ul {
@@ -151,7 +151,7 @@
 
 .dropdownItem {
     text-decoration: none;
-    color: white;
+    color: #1CAC78;
     font-size: 18px;
     font-weight: 300;
     padding: 12px;

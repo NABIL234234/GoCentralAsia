@@ -1,0 +1,41 @@
+.TitleInfoWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.TitleInfoWrapper h2 {
+    font-family: "Bebas Neue";
+    font-size: 36px;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.TitleInfoWrapper button {
+    color: black;
+    padding: 3px 68px;
+    border-radius: 8px;
+    border: none;
+}
+
+.countryDescription {
+    margin-top: 16px;
+}
+
+.countryDescription img {
+    width: 100%;
+    height: auto;
+}
+
+.countryDescription h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.countryDescription p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+

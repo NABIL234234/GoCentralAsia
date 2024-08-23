@@ -1,0 +1,8 @@
+.InfoWrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 82px;
+    margin-top: 96px;
+}
+
+
