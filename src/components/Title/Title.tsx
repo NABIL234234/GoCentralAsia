@@ -4,7 +4,7 @@ import styles from './Title.module.css';
 
 type TitleProps = {
   mainText: string;
-  paragraph: string;
+  paragraph?: string;
   className?: string;
 };
 

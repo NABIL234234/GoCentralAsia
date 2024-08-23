@@ -9,13 +9,25 @@ type PopularTourCardProps = {
   countryPoint: string;
   tourDescription: string;
   className?: string;
+  style?: React.CSSProperties;
+  SecondClassName?: string;
 };
 
-const PopularTourCard: React.FC<PopularTourCardProps> = ({days, countryPoint, tourDescription, className}) => {
+const PopularTourCard: React.FC<PopularTourCardProps> = ({
+                                                           days,
+                                                           countryPoint,
+                                                           tourDescription,
+                                                           className,
+                                                           style,
+                                                           SecondClassName
+                                                         }) => {
   return (
     <div className={`${styles.tour_card} ${className}`}>
       <img src={TourImg} alt="Tour" className={styles.tour_card_img}/>
-      <div className={styles.tour_info_block}>
+      <div
+        className={`${styles.tour_info_block} ${SecondClassName}`}
+        style={style}
+      >
         <div className={styles.days}>
           <MdAccessTimeFilled/>
           <h5>{days}</h5>
