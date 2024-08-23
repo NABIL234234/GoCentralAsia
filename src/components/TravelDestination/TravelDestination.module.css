@@ -1,0 +1,24 @@
+.TravelDestinations {
+    width: 315px;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+}
+
+.TravelDestinations h3,ul {
+    list-style: none;
+    text-align: start;
+    padding: 0;
+    padding-left: 24px;
+}
+
+.TravelDestinations li {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.TravelDestinations li:hover {
+    color: #1CAC78;
+}
