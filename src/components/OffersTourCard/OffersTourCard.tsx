@@ -2,16 +2,17 @@ import styles from "../../pages/Home/Offers/Offers.module.css";
 import TourImg from "../../assets/Images/Tour.png";
 
 type OffersTourCardProps = {
-  title: string;
-  description: string;
-  oldPrice: string;
-  newPrice: string;
-  discount: string;
+  title?: string;
+  description?: string;
+  oldPrice?: string;
+  newPrice?: string;
+  discount?: string;
+  className?: string;
 };
 
-const OffersTourCard: React.FC<OffersTourCardProps> = ({ title, description, oldPrice, newPrice, discount }) => {
+const OffersTourCard: React.FC<OffersTourCardProps> = ({ title, description, oldPrice, newPrice, discount, className }) => {
   return (
-    <div className={styles.tour_card}>
+    <div className={`${styles.tour_card} ${className || ''}`}>
       <img src={TourImg} alt={title} />
       <div className={styles.tour_desc}>
         <h4>{title}</h4>
