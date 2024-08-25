@@ -9,12 +9,12 @@
     gap: 30px;
 }
 
-h2{
+.list_h2{
     color: rgba(31, 45, 74, 1);
     height: 24px;
 }
 
-h3{
+.con_h3{
     font-weight: 600;
     font-size: 16px;
     line-height: 26px;
