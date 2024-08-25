@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './TourCard.module.css';
-import TourImg from "../../assets/Images/Tour.png";
+import TourImg from "../../../assets/Images/Tour.png";
 import {MdAccessTimeFilled} from 'react-icons/md';
 import {IoMdPeople} from 'react-icons/io';
 import {RiMapPinFill} from 'react-icons/ri';

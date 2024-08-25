@@ -1,6 +1,6 @@
-import Title from "../Title/Title.tsx";
+import Title from "../../Global/Title/Title.tsx";
 import styles from "./DestinationTourCards.module.css";
-import TourCard from "../TourCard/TourCard.tsx";
+import TourCard from "../../homePageComponets/TourCard/TourCard.tsx";
 
 const DestinationTourCards = () => {
   const tourData = [

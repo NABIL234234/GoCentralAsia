@@ -1,7 +1,7 @@
 import styles from './UnveilingCentralAsia.module.css';
 
 //components
-import Title from "../../../components/Title/Title.tsx";
+import Title from "../../../components/Global/Title/Title.tsx";
 
 //images
 import CentralAsia from "../../../assets/Images/CentralAsia.png";

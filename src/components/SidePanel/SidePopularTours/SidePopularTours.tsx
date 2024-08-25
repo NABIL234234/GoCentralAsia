@@ -1,5 +1,5 @@
 import styles from "./SidePopularTours.module.css";
-import PopularTourCard from "../PopularTourCard/PopularTourCard.tsx";
+import PopularTourCard from "../../homePageComponets/PopularTourCard/PopularTourCard.tsx";
 
 const SidePopularTours = () => {
 

@@ -1,7 +1,7 @@
 import styles from './CentralAsiaTours.module.css';
 
 //components
-import Title from "../../../components/Title/Title.tsx";
+import Title from "../../../components/Global/Title/Title.tsx";
 
 //images
 import River from '../../../assets/Images/CA_photo1.jpg';

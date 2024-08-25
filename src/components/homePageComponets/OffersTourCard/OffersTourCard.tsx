@@ -1,5 +1,5 @@
-import styles from "../../pages/Home/Offers/Offers.module.css";
-import TourImg from "../../assets/Images/Tour.png";
+import styles from "../../../pages/Home/Offers/Offers.module.css";
+import TourImg from "../../../assets/Images/Tour.png";
 
 type OffersTourCardProps = {
   title?: string;

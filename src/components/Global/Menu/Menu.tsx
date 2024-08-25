@@ -1,6 +1,6 @@
 
 import styles from './Menu.module.css';
-import Logo from "../../assets/Images/GreenLogo.jpg";
+import Logo from "../../../assets/Images/GreenLogo.jpg";
 import { IoMdArrowDropdown } from "react-icons/io";
 
 interface MenuProps {

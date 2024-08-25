@@ -1,7 +1,7 @@
 import styles from './GroupTours.module.css';
-import Title from "../../../components/Title/Title.tsx";
-import TourCard from "../../../components/TourCard/TourCard.tsx";
-import SeeMore from "../../../components/buttons/SeeMore/SeeMore.tsx";
+import Title from "../../../components/Global/Title/Title.tsx";
+import TourCard from "../../../components/homePageComponets/TourCard/TourCard.tsx";
+import SeeMore from "../../../components/Global/SeeMore/SeeMore.tsx";
 
 const tourData = [
   {
