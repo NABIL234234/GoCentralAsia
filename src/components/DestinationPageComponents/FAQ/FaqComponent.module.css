@@ -1,0 +1,13 @@
+.faqContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.questionList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

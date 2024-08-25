@@ -1,7 +1,7 @@
 import styles from './PopularTour.module.css';
-import Title from "../../../components/Title/Title.tsx";
-import SeeMore from "../../../components/buttons/SeeMore/SeeMore.tsx";
-import PopularTourCard from "../../../components/PopularTourCard/PopularTourCard.tsx";
+import Title from "../../../components/Global/Title/Title.tsx";
+import SeeMore from "../../../components/Global/SeeMore/SeeMore.tsx";
+import PopularTourCard from "../../../components/homePageComponets/PopularTourCard/PopularTourCard.tsx";
 
 function PopularTour() {
   const tourData = [

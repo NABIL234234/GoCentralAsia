@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.css';
 
 // компоненты
-import AdventureComponent from "../../../components/AdventureComponent/AdventureComponent.tsx";
-import Menu from '../../../components/Menu/Menu.tsx';  // Импортируем компонент меню
+import AdventureComponent from "../../../components/homePageComponets/AdventureComponent/AdventureComponent.tsx";
+import Menu from '../../../components/Global/Menu/Menu.tsx';  // Импортируем компонент меню
 
 // изображения
 import Logo from "../../../assets/Images/Logo.png";

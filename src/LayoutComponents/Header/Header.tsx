@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './Header.module.css';
-import Menu from '../../components/Menu/Menu.tsx';
+import Menu from '../../components/Global/Menu/Menu.tsx';
 import Logo from '../../assets/Images/GreenLogo.jpg';
 import { FaInstagram, FaWhatsapp, FaYoutube, FaPhone } from 'react-icons/fa';
 import { CiMail, CiSearch } from 'react-icons/ci';

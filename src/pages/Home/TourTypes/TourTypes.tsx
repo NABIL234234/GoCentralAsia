@@ -1,8 +1,8 @@
 import styles from './TourTypes.module.css';
 
 //components
-import Title from "../../../components/Title/Title.tsx";
-import TourTypesCard from "../../../components/TourTypesCard/TourTypesCard.tsx";
+import Title from "../../../components/Global/Title/Title.tsx";
+import TourTypesCard from "../../../components/homePageComponets/TourTypesCard/TourTypesCard.tsx";
 
 //images
 import Bike from '../../../assets/Images/Bike.png';

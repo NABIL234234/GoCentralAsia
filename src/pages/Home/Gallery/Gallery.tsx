@@ -1,8 +1,8 @@
 import styles from './Gallery.module.css';
 
 //components
-import Title from "../../../components/Title/Title.tsx";
-import GalleryCard from "../../../components/GalleryCard/GalleryCard.tsx";
+import Title from "../../../components/Global/Title/Title.tsx";
+import GalleryCard from "../../../components/homePageComponets/GalleryCard/GalleryCard.tsx";
 
 //images
 import Gallery1 from "../../../assets/Images/Gallery1.png";

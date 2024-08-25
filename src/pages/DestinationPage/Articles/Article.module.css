@@ -1,0 +1,54 @@
+.articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 205px;
+}
+
+.articlesWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+
+.articleCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 350px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.articleCard img {
+    width: 100%;
+    height: auto;
+}
+
+.articleCard span {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+.articleCard p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.articleCard button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: #D1D1D1;
+    font-weight: 500;
+    margin-top: 12px;
+}

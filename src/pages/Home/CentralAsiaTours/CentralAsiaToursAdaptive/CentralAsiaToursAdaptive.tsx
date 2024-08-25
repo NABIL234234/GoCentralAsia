@@ -1,4 +1,4 @@
-import Title from "../../../../components/Title/Title.tsx";
+import Title from "../../../../components/Global/Title/Title.tsx";
 import styles from './CentralAsiaToursAdaptive.module.css';
 
 //images

@@ -1,7 +1,7 @@
 import styles from './Offers.module.css';
-import Title from "../../../components/Title/Title.tsx";
-import SeeMore from "../../../components/buttons/SeeMore/SeeMore.tsx";
-import OffersTourCard from "../../../components/OffersTourCard/OffersTourCard.tsx";
+import Title from "../../../components/Global/Title/Title.tsx";
+import SeeMore from "../../../components/Global/SeeMore/SeeMore.tsx";
+import OffersTourCard from "../../../components/homePageComponets/OffersTourCard/OffersTourCard.tsx";
 
 const tourData = [
   {
