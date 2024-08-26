@@ -1,21 +1,22 @@
-
-import { useRoutes } from 'react-router-dom';
+import {useRoutes} from 'react-router-dom';
 import Home from '../pages/Home';
 import DestinationPage from "../pages/DestinationPage";
+import ConditionsPage from "../pages/ConditionsPage";
 
 const routes = [
-  { path: '/', element: <Home /> },
-  { path: '/desitination', element: <DestinationPage /> },
+    {path: '/', element: <Home/>},
+    {path: '/desitination', element: <DestinationPage/>},
+    {path: '/conditions', element: <ConditionsPage/>},
 ];
 
 const RouterView = () => {
-  const element = useRoutes(routes);
+    const element = useRoutes(routes);
 
-  return (
-    <div>
-      {element}
-    </div>
-  );
+    return (
+        <div>
+            {element}
+        </div>
+    );
 };
 
 export default RouterView;
