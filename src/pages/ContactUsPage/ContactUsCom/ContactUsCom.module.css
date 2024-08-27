@@ -1,0 +1,167 @@
+.Container{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 25px 0 100px;
+
+    gap: 20px;
+}
+
+.Container_Bl{
+    max-width: 843px;
+}
+
+.Bl_h2{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    font-family: 'Bebas Neue', serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+.Bl_Con{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+
+    color: rgba(28, 172, 120, 1);
+
+    margin: 0;
+    padding: 0;
+}
+.p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+}
+.p_span{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.Block_Dot{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+.Con_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 44px;
+
+    border-radius: 8px;
+    border: none;
+
+    padding: 10px 0 10px 0;
+
+    gap: 8px;
+
+    background: rgba(28, 172, 120, 1);
+    transition: 0.3s ease;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+
+    color: #fff;
+
+}
+.Con_button:hover{
+    background: rgb(38, 142, 103);
+    transition: 0.3s ease;
+}
+
+.Block_Icons{
+    margin: 20px 0 20px 0;
+    display: flex;
+    gap: 20px;
+}
+
+.Block_p{
+    margin-top: 30px;
+}
+
+.Inf_hr1{
+    border: 1px solid rgba(28, 172, 120, 1);
+    width: 88px;
+    margin: 5px 0 7px;
+}
+
+.Inf_hr2{
+    width: 184px;
+    border: 1px solid rgba(28, 172, 120, 1);
+    margin: 5px 0 7px;
+}
+
+
+/*.......................................*/
+
+.Container_Destinations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border: 1px solid rgba(232, 232, 232, 1);
+    border-radius: 8px;
+
+    padding: 24px;
+    gap: 16px;
+
+    max-height: 254px;
+    max-width: 295px;
+    width: 100%;
+
+}
+
+.Destinations_h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 26px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.Destinations_p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*media*/
+
+@media (max-width: 760px) {
+    .Container{
+        flex-direction: column;
+
+    }
+    .Container_Destinations{
+        border: none;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .Con_button{
+        width: 100%;
+    }
+}
