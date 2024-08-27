@@ -5,7 +5,7 @@ import ConditionsPage from "../pages/ConditionsPage";
 
 const routes = [
     {path: '/', element: <Home/>},
-    {path: '/desitination', element: <DestinationPage/>},
+    {path: '/destination', element: <DestinationPage/>},
     {path: '/conditions', element: <ConditionsPage/>},
 ];
 
