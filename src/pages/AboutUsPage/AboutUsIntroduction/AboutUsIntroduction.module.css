@@ -1,0 +1,206 @@
+.AboutUsIntroduction_Con{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 130px;
+    gap: 20px;
+}
+
+.Con_Bl{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 843px;
+    width: 100%;
+}
+
+.Con_Bl>h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: left;
+    margin: 0;
+    padding: 0 0 10px 0 ;
+
+    color: rgba(56, 56, 56, 1);
+
+}
+
+.Bl_Content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Content_Text>h3{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(28, 172, 120, 1);
+    margin: 0;
+    padding: 0 0 6px;
+}
+
+.Content_Text>p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+    color: rgba(74, 76, 75, 1);
+
+}
+
+.Content_Img>img{
+    max-width: 843px;
+    width: 100%;
+}
+
+.Content_Img_Med>img {
+    display: none;
+}
+
+.Text_Paragraphs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.Text_Paragraphs>p>span{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(74, 76, 75, 1);
+
+    margin: 0;
+    padding: 0;
+
+}
+
+.Text_Paragraphs>p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: rgba(74, 76, 75, 1);
+
+    margin: 0;
+    padding: 0;
+}
+
+.Content_Cards > h3 {
+     font-size: 16px;
+     font-weight: 600;
+     line-height: 26px;
+     text-align: left;
+     color: rgba(28, 172, 120, 1);
+    margin: 0;
+    padding: 0;
+ }
+
+
+.Cards{
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    transition: 0.4s ease;
+    flex-wrap: nowrap;
+    gap: 16px;
+
+}
+.Card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+    text-align: center;
+    width: 270px;
+    height: 302px;
+    padding: 24px 16px;
+    gap: 16px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+
+    transition: 0.4s ease;
+
+
+}
+.Card>p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(74, 76, 75, 1);
+    margin: 0;
+    padding: 0;
+}
+
+.Card>h4{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(74, 76, 75, 1);
+    margin: 0;
+    padding: 0;
+}
+.Card>img{
+    max-width: 43px;
+    max-height: 43px;
+    margin: 0;
+    padding: 0;
+}
+.Text_Line1{
+    border: 1px solid rgba(28, 172, 120, 1);
+    width: 70px;
+    margin: 5px 0 7px;
+}.Text_Line2{
+     border: 1px solid rgba(28, 172, 120, 1);
+     width: 105px;
+     margin: 5px 0 7px;
+ }.Text_Line3{
+      border: 1px solid rgba(28, 172, 120, 1);
+      width: 139px;
+      margin: 5px 0 17px;
+  }.Text_Line4{
+       border: 1px solid rgba(28, 172, 120, 1);
+       width: 140px;
+       margin: 5px 0 15px;
+   }
+
+
+@media (max-width: 870px) {
+    .AboutUsIntroduction_Con{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .Cards{
+        flex-wrap: wrap;
+        transition: 0.4s ease;
+    }
+}
+@media (max-width: 652px) {
+    .Card{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        transition: 0.4s ease;
+
+    }
+}
+
+@media (max-width: 390px) {
+    .Content_Img>img{
+        display: none;
+    }
+   .Content_Img_Med>img {
+       display: flex;
+   }
+}
