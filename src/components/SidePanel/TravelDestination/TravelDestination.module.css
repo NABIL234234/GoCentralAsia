@@ -1,5 +1,5 @@
 .TravelDestinations {
-    width: 315px;
+    width: 100%;
     border: 1px solid #E8E8E8;
     border-radius: 8px;
 }
@@ -8,7 +8,7 @@
     list-style: none;
     text-align: start;
     padding: 0;
-    padding-left: 24px;
+    margin: 0;
 }
 
 .TravelDestinations li {
@@ -21,4 +21,12 @@
 
 .TravelDestinations li:hover {
     color: #1CAC78;
+}
+
+
+
+@media (max-width: 1150px) {
+    .TravelDestinations {
+        display: none;
+    }
 }

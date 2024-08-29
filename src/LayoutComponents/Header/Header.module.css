@@ -231,6 +231,16 @@
     transition: all 0.3s ease;
 }
 
+@media (max-width: 1300px) {
+    .navigationContainer {
+        margin-left: 4%;
+    }
+
+    .navigationContainer ul {
+        gap: 16px;
+    }
+}
+
 @media (max-width: 1150px) {
     .burger-btn {
         display: flex;
@@ -248,6 +258,7 @@
 
     .headerRow {
         padding-top: 12px;
+        margin-top: 0;
     }
 
     .searchIcon2 {

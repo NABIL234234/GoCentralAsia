@@ -20,20 +20,20 @@ function TourTypes() {
   return (
     <div className={styles.tour_types}>
       <div className={styles.container}>
-        <Title
-          mainText="TOUR TYPES"
-          paragraph="Explore our diverse range of tour types tailored to suit every traveler's preferences and interests. Choose from adventure tours, cultural expeditions, eco-friendly journeys, family-friendly vacations, luxury getaways, and more."
-        />
-        <div className={styles.tour_types_grid}>
-          <TourTypesCard title="Winter Tours" backgroundImage={Winter}/>
-          <TourTypesCard title="Bike Tours" backgroundImage={Bike}/>
-          <TourTypesCard title="Horseback Tours" backgroundImage={HorseBack}/>
-          <TourTypesCard title="Group Tours" backgroundImage={Group}/>
-          <TourTypesCard title="Off Roads Tours" backgroundImage={OffRoads}/>
-          <TourTypesCard title="Culture Tours" backgroundImage={Culture}/>
-          <TourTypesCard title="Photo Tours" backgroundImage={Photo}/>
-          <TourTypesCard title="One Day Tours" backgroundImage={OneDay}/>
-        </div>
+          <Title
+            mainText="TOUR TYPES"
+            paragraph="Explore our diverse range of tour types tailored to suit every traveler's preferences and interests. Choose from adventure tours, cultural expeditions, eco-friendly journeys, family-friendly vacations, luxury getaways, and more."
+          />
+          <div className={styles.tour_types_grid}>
+            <TourTypesCard title="Winter Tours" backgroundImage={Winter}/>
+            <TourTypesCard title="Bike Tours" backgroundImage={Bike}/>
+            <TourTypesCard title="Horseback Tours" backgroundImage={HorseBack}/>
+            <TourTypesCard title="Group Tours" backgroundImage={Group}/>
+            <TourTypesCard title="Off Roads Tours" backgroundImage={OffRoads}/>
+            <TourTypesCard title="Culture Tours" backgroundImage={Culture}/>
+            <TourTypesCard title="Photo Tours" backgroundImage={Photo}/>
+            <TourTypesCard title="One Day Tours" backgroundImage={OneDay}/>
+          </div>
       </div>
     </div>
   );
