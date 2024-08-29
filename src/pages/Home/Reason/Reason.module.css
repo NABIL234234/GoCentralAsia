@@ -3,12 +3,6 @@
     margin-bottom: 210px;
 }
 
-.container {
-    max-width: 1360px;
-    margin: 0 auto;
-    padding: 0 40px;
-}
-
 .central_asia {
     display: flex;
     flex-direction: column;

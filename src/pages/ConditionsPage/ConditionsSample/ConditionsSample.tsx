@@ -1,6 +1,6 @@
 import styles from "./ConditionsSample.module.css"
 
-const ConditionsSample= () => {
+const ConditionsSample = () => {
     return (
         <div className={styles.list}>
              <h2 className={styles.list_h2}>Terms & Conditions</h2>
