@@ -5,6 +5,7 @@ import ConditionsPage from "../pages/ConditionsPage";
 import TermsPrivacyPolicyPage from "../pages/TermsPrivacyPolicyPage";
 import ContactUsPage from "../pages/ContactUsPage";
 import AboutUsPage from "../pages/AboutUsPage";
+import BlogPage from "../pages/BlogPage";
 
 const routes = [
     {path: '/', element: <Home/>},
@@ -13,6 +14,7 @@ const routes = [
     {path: '/TermsPrivacyPolicy', element: <TermsPrivacyPolicyPage/>},
     {path: '/ContactUs', element: <ContactUsPage/>},
     {path: '/AboutUs', element: <AboutUsPage/>},
+    {path: '/Blog', element: <BlogPage/>},
 ];
 
 const RouterView = () => {
