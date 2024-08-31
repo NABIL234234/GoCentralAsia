@@ -7,6 +7,7 @@ import Hike from '../../../assets/Images/Hike.svg';
 import Lake from '../../../assets/Images/Lake.svg';
 import Mountains from '../../../assets/Images/Mountains.svg';
 import Snacks from '../../../assets/Images/Snacks.svg';
+import TravelDestination from "../../../components/SidePanel/TravelDestination/TravelDestination.tsx";
 
 const ContentBlog = () => {
     const cards = [
@@ -52,19 +53,35 @@ const ContentBlog = () => {
                 <h2>Blog</h2>
                 <div className={styles.Cards_Con}>
                     {cards.map((card, index) => (
-                    <div key={index} className={styles.Cards}>
-                        <div className={styles.CardImgCon}>
-                            <img src={card.img} alt={card.h2} className={styles.CardImage}/>
-                        </div>
-                        <div>
-                            <h2 className={styles.CardTitle}>{card.h2}</h2>
-                            <p className={styles.CardText}>{card.p}</p>
-                            <a className={styles.CardLink} href={'#'}>Read more</a>
-                        </div>
+                        <div key={index} className={styles.Cards}>
+                            <div className={styles.CardImgCon}>
+                                <img src={card.img} alt={card.h2} className={styles.CardImage}/>
+                            </div>
+                            <div>
+                                <h2 className={styles.CardTitle}>{card.h2}</h2>
+                                <p className={styles.CardText}>{card.p}</p>
+                                <a className={styles.CardLink} href={'#'}>Read more</a>
+                            </div>
 
-                    </div>
+                        </div>
                     ))}
                 </div>
+            </div>
+
+            <div className={styles.ContainerRecent}>
+
+                <div className={styles.RecentPosts}>
+                    <h3>Recent Posts</h3>
+                    <div className={styles.PostsCard}>
+                        <div className={styles.PostsCardImg}></div>
+                        <h4>Kyrgyzstan</h4>
+                    </div>
+                    <div className={styles.PostsCard}>
+                        <div className={styles.PostsCardImg}></div>
+                        <h4>Kyrgyzstan</h4>
+                    </div>
+                </div>
+                <TravelDestination/>
             </div>
         </div>
     );

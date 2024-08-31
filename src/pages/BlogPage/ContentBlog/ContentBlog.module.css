@@ -1,5 +1,9 @@
 .Content{
-    padding: 25px 0 100px
+    padding: 25px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
 }
 
 
@@ -19,7 +23,7 @@
 .Cards_Con{
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 20px;
 }
 
 .Cards{
@@ -52,15 +56,16 @@
 
 .CardLink{
     display: flex;
-    justify-content: left;
+    justify-content: end;
     width: 100%;
     height: 30px;
-    margin: 16px 0;
+    margin: 16px 0 0;
 
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: rgba(156, 155, 155, 1);
+    text-decoration: none;
 }
 
 .CardTitle{
@@ -73,3 +78,142 @@
     padding: 0;
 }
 
+.ContainerRecent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.RecentPosts{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.RecentPosts>h3{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    margin: 0;
+    padding: 40px 0 0;
+}
+
+.PostsCard{
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    width: 100% !important;
+    height: 76px;
+    padding: 8px;
+    gap: 12px;
+    border-radius: 8px;
+
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+}
+
+.PostsCard>h4{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.PostsCardImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    background: rgba(217, 217, 217, 1);
+}
+
+
+@media (max-width: 1390px) {
+    .Content{
+        justify-content: space-around;
+    }
+
+    .Cards_Con{
+        flex-direction: column;
+    }
+
+    .Container_Cards{
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .Cards{
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .CardImgCon>img{
+        max-width: 500px ;
+        width: 100% !important;
+    }
+
+}
+
+
+@media (max-width: 940px) {
+    .Content{
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
+    .Cards_Con{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .Container_Cards{
+        /*max-width: 100%;*/
+        /*width: 100%;*/
+    }
+
+    .Cards{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        max-width: 370px;
+        width: 100%;
+        border-radius: 8px ;
+        padding: 16px;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+    }
+
+
+    .CardImgCon>img{
+        max-width: 500px ;
+        width: 100% !important;
+    }
+
+}
+
+@media (max-width: 760px) {
+  .Content{
+      flex-direction: column;
+  }
+
+    .Container_Cards{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .Cards{
+        width: 100%;
+    }
+    .Cards_Con{
+        width: 100%;
+    }
+}
+
+@media (max-width: 435px) {
+    .Cards{
+        max-width: 300px !important;
+        width: 100% !important;
+    }
+}

@@ -4,7 +4,7 @@
     border-radius: 8px;
 }
 
-.TravelDestinations h3,ul {
+.TravelDestinations h3, ul {
     list-style: none;
     text-align: start;
     padding: 0;
@@ -22,3 +22,5 @@
 .TravelDestinations li:hover {
     color: #1CAC78;
 }
+
+
