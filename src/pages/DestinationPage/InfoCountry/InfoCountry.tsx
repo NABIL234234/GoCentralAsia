@@ -14,10 +14,11 @@ import Article from "../Articles/Article.tsx";
 
 
 const InfoCountry = () => {
+  const selectedDestinations = ["Altyn Arashan", "Arslanbob", "Batken", "Burana Tower", "Cholpon-Ata", "Chon-Kemin", "Issyk-Kul", "Jalalabad", "Karakol"];
 
   return (
     <div>
-      <div className={styles.container}>
+      <div>
         <div className={styles.InfoWrapper}>
           <div>
             <DescriptionCountry/>
@@ -29,7 +30,7 @@ const InfoCountry = () => {
             <Article />
           </div>
           <div className={styles.SidePanel}>
-            <TravelDestination/>
+            <TravelDestination destinations={selectedDestinations} title='Travel Destinations'/>
             <ContactPanel/>
             <SidePopularTours/>
           </div>

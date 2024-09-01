@@ -25,8 +25,6 @@
 
 .photosWrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
 }
 
@@ -35,4 +33,22 @@
     height: 250px;
     background: #D9D9D9;
     border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .titleTravelHighlights{
+        display: none;
+    }
+
+
+
+    .travelHighlightsImage {
+        width: 358px;
+        height: 173px;
+    }
+
+    .photosWrapper .photoCountry:nth-child(1) {
+        display: none;
+    }
 }

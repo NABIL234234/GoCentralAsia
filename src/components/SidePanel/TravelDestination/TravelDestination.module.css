@@ -2,13 +2,22 @@
     width: 315px;
     border: 1px solid #E8E8E8;
     border-radius: 8px;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #fff;
 }
 
-.TravelDestinations h3,ul {
-    list-style: none;
+.TravelDestinations h3 {
     text-align: start;
+    padding: 16px 24px 8px;
+    margin: 0;
+    font-size: 22px;
+}
+
+.TravelDestinations ul {
+    list-style: none;
     padding: 0;
-    padding-left: 24px;
+    margin: 0;
 }
 
 .TravelDestinations li {
@@ -17,8 +26,63 @@
     font-weight: 500;
     white-space: nowrap;
     cursor: pointer;
+    list-style-type: none;
+    padding-left: 24px;
+    transition: color 0.3s ease; /* Добавляем плавный переход цвета */
 }
 
 .TravelDestinations li:hover {
     color: #1CAC78;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+    .TravelDestinations {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .TravelDestinations h3 {
+        font-size: 20px;
+    }
+
+    .TravelDestinations li {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .TravelDestinations {
+        width: 100%;
+        padding: 12px;
+        border-radius: 6px;
+    }
+
+    .TravelDestinations h3 {
+        font-size: 18px;
+        padding: 12px 16px 8px;
+    }
+
+    .TravelDestinations li {
+        font-size: 16px;
+        padding-left: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .TravelDestinations {
+        padding: 12px;
+    }
+
+    .TravelDestinations h3 {
+        font-size: 16px;
+        padding: 12px 16px;
+    }
+
+    .TravelDestinations li {
+        font-size: 14px;
+        padding-left: 12px;
+        margin-top: 12px;
+    }
 }

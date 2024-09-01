@@ -3,6 +3,17 @@
     justify-content: space-between;
 }
 
+.TitleInfoWrapper img {
+    width: 80px;
+}
+
+.small{
+    display: none;
+}
+
+.countryAdaptive{
+    display: none;
+}
 
 .TitleInfoWrapper h2 {
     font-family: "Bebas Neue";
@@ -10,7 +21,6 @@
     font-weight: 400;
     margin: 0;
 }
-
 
 .TitleInfoWrapper button {
     color: black;
@@ -38,4 +48,48 @@
     font-weight: 400;
     margin: 0;
 }
+
+
+@media (max-width: 768px) {
+    .countryDescription img{
+        width: 358px;
+        height: 192px;
+    }
+
+    .kgtext {
+        display: none;
+    }
+
+    .small{
+       margin-left: 40px;
+    }
+
+    .countryDescription {
+       display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .countryParagraph{
+        display: none;
+    }
+
+    .TitleInfoWrapper .small{
+       display: flex;
+       align-items: center;text-align: center;
+    }
+    .countryAdaptive{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .TitleInfoWrapper button {
+         display: none;
+    }
+
+}
+
 

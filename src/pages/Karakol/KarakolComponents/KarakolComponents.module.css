@@ -1,0 +1,50 @@
+.karakol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.globalkarakol {
+    display: flex;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.description p {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media (max-width: 1150px) {
+    .karakol {
+        padding: 0 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .karakol {
+        padding: 0 15px;
+    }
+
+    .images img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .karakol {
+        padding: 0 10px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}

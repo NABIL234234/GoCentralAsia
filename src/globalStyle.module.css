@@ -17,6 +17,20 @@ body {
 
 @media (max-width: 1150px) {
   .container {
-    padding: 0 16px;
+    max-width: 100%;
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
   }
 }

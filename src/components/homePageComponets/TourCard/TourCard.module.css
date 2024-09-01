@@ -71,7 +71,7 @@
 }
 
 /* Адаптивные стили */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
     .tour_card .price {
         width: 60%;
         height: 45px;

@@ -6,7 +6,10 @@ const DescriptionCountry = () => {
   return (
     <div>
       <div className={styles.TitleInfoWrapper}>
-        <h2>Kyrgyzstan</h2>
+        <h2 className={styles.kgtext}>Kyrgyzstan</h2>
+        <div className={styles.small}>
+        <h2 >Kyrgyzstan Small Group <br/> tours</h2>
+        </div>
         <button>Transfers</button>
       </div>
       <div className={styles.countryDescription}>
@@ -53,6 +56,16 @@ const DescriptionCountry = () => {
             To reach Jalal-Abad from Bishkek possible on a shared taxi from Western Bus station in Bishkek or near
             Osh Bazaar. It takes 570 km, about 10 hours driving.
             Possible to catch a shared taxi from Osh town, Ozgon and Bazar-Korgon</p>
+        </div>
+
+        <div className={styles.countryAdaptive}>
+          <p>Nestled in the heart of Central Asia, Kyrgyzstan beckons with its breathtaking mountain landscapes, nomadic
+            culture, and warm hospitality. Known as the 'Land of the Celestial Mountains,'
+            Kyrgyzstan is a paradise for outdoor enthusiasts and cultural adventurers alike.</p>
+          <p>With over 90% of its territory covered by mountains, Kyrgyzstan offers endless opportunities for trekking,
+            horseback riding, and mountaineering. From the towering peaks of the Tien Shan range to the tranquil shores
+            of alpine lakes like
+            Issyk-Kul, the country's natural beauty is simply awe-inspiring.</p>
         </div>
       </div>
     </div>

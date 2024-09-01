@@ -1,24 +1,23 @@
-.titleText {
-    margin-top: 40px;
-    display: block;
-}
-
 .tour_cards_groupTours {
     margin-top: 16px;
     display: flex;
     justify-content: space-between;
     gap: 12px;
+    flex-wrap: wrap;
+    padding: 0 6px; /* Добавляем padding, чтобы отступы слева и справа были равными */
 }
 
 .tour_card_info {
-    width: 100%;
+    width: calc(50% - 12px); /* Устанавливаем равные отступы по сторонам */
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
 }
 
-.customInfoBlock {
-    top: 225px !important;
-    width: 223px !important;
+@media (max-width: 768px) {
+    .tour_card_info {
+        width: calc(100% - 12px); /* Для мобильных устройств с равными отступами */
+        margin-bottom: 12px;
+    }
 }

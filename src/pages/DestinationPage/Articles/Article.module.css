@@ -52,3 +52,14 @@
     font-weight: 500;
     margin-top: 12px;
 }
+
+@media (max-width: 768px) {
+    .articleCard:nth-child(1) {
+        display: none;
+    }
+
+    .articlesWrapper {
+        width: 270px;
+        height: 406px;
+    }
+}

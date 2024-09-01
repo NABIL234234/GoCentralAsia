@@ -40,6 +40,15 @@
     }
 }
 
+@media (max-width: 768px) {
+
+
+    .reason img {
+        width: 358px;
+        height: 241px;
+    }
+}
+
 @media (max-width: 650px) {
     .central_asia_img {
         width: 100%;

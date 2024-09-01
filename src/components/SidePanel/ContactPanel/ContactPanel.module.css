@@ -28,8 +28,6 @@
   background-color: #e56d32;
 }
 
-
-
 .inputContainer {
     display: flex;
     flex-direction: column;
@@ -61,4 +59,11 @@
     font-weight: 400;
     font-size: 16px;
     outline: none;
+}
+
+@media (max-width: 768px) {
+    .ContactSideBar{
+        width: 340px;
+        height: 404px;
+    }
 }

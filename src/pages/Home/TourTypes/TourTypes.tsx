@@ -8,7 +8,7 @@ import TourTypesCard from "../../../components/homePageComponets/TourTypesCard/T
 import Bike from '../../../assets/Images/Bike.png';
 import Winter from '../../../assets/Images/Winter.png';
 import HorseBack from "../../../assets/Images/HorseBack.png";
-import Group from "../../../assets/Images/Group.png";
+import Group from "../../../assets/Images/GreenLogo.jpg";
 import OffRoads from "../../../assets/Images/offRoads.png";
 import Culture from "../../../assets/Images/Culture.png";
 import Photo from "../../../assets/Images/Photo.png";
