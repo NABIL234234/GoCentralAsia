@@ -194,9 +194,9 @@
 }
 
 @media (max-width: 760px) {
-  .Content{
-      flex-direction: column;
-  }
+    .Content{
+        flex-direction: column;
+    }
 
     .Container_Cards{
         max-width: 100%;

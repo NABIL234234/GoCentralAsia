@@ -1,10 +1,10 @@
 import styles from "../../globalStyle.module.css";
-import ContentBlog from "./ContentBlog/ContentBlog.tsx";
+import TourismBlog from "./TourismBlog/TourismBlog.tsx";
 
 function Index() {
     return (
         <div className={styles.container}>
-            <ContentBlog/>
+            <TourismBlog/>
         </div>
     );
 }
