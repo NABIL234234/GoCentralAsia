@@ -5,6 +5,8 @@ import ConditionsPage from "../pages/ConditionsPage";
 import TermsPrivacyPolicyPage from "../pages/TermsPrivacyPolicyPage";
 import ContactUsPage from "../pages/ContactUsPage";
 import AboutUsPage from "../pages/AboutUsPage";
+import BlogPage from "../pages/BlogPage";
+import BlogTourismPage from "../pages/BlogTourismPage";
 
 const routes = [
     {path: '/', element: <Home/>},
@@ -13,6 +15,8 @@ const routes = [
     {path: '/terms-privacy-policy', element: <TermsPrivacyPolicyPage/>},
     {path: '/contact-us', element: <ContactUsPage/>},
     {path: '/about-us', element: <AboutUsPage/>},
+    {path: '/Blog', element: <BlogPage/>},
+    {path: '/BlogTourism', element: <BlogTourismPage/>},
 ];
 
 const RouterView = () => {
