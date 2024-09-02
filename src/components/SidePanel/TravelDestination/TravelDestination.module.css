@@ -24,3 +24,8 @@
 }
 
 
+@media (max-width: 1150px) {
+    .TravelDestinations {
+        display: none;
+    }
+}
