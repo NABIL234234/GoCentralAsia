@@ -8,3 +8,11 @@
 .customTourInfoBlock {
     top: 240px;
 }
+
+
+
+@media (max-width: 1150px) {
+    .tour_cards_SidePopularTours {
+        display: none;
+    }
+}

@@ -1,20 +1,20 @@
+import React from 'react';
 import styles from "./TravelDestination.module.css";
 
-const TravelDestination = () => {
+type TravelDestinationProps = {
+  title?: string;
+  items: string[];  // Массив элементов
+  className?: string;
+}
+
+const TravelDestination: React.FC<TravelDestinationProps> = ({ items, title = "Destinations", className }) => {
   return (
-    <div className={styles.TravelDestinations}>
-      <h3>Travel Destinations</h3>
+    <div className={`${styles.TravelDestinations} ${className}`}>
+      <h3>{title}</h3>
       <ul>
-        <li>Altyn Arashan</li>
-        <li>Arslanbob</li>
-        <li>Batken</li>
-        <li>Bishkek</li>
-        <li>Burana Tower</li>
-        <li>Cholpon-Ata</li>
-        <li>Chon-Kemin</li>
-        <li>Issyk-Kul</li>
-        <li>Jalalabad</li>
-        <li>Karakol</li>
+        {items.map((item, index) => (
+          <li key={index}>{item}</li> // Итерируем каждый item
+        ))}
       </ul>
     </div>
   );

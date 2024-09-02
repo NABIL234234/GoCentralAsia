@@ -103,6 +103,10 @@
         gap: 15px;
     }
 
+    .footerLinks > ul {
+        text-align: center;
+    }
+
     .footerLogo {
         margin-right: 0;
     }

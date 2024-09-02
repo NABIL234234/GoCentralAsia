@@ -62,3 +62,10 @@
     font-size: 16px;
     outline: none;
 }
+
+
+@media (max-width: 1150px) {
+    .ContactSideBar{
+        display: none;
+    }
+}
