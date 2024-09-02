@@ -15,8 +15,8 @@ const routes = [
     {path: '/terms-privacy-policy', element: <TermsPrivacyPolicyPage/>},
     {path: '/contact-us', element: <ContactUsPage/>},
     {path: '/about-us', element: <AboutUsPage/>},
-    {path: '/blog', element: <BlogPage/>},
-    {path: '/blog-tourism', element: <BlogTourismPage/>},
+    {path: '/Blog', element: <BlogPage/>},
+    {path: '/BlogTourism', element: <BlogTourismPage/>},
 ];
 
 const RouterView = () => {
