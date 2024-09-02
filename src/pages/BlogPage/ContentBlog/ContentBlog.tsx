@@ -46,6 +46,10 @@ const ContentBlog = () => {
         }
     ];
 
+    const destinations = [
+        'Altyn Arashan', 'Arslanbob', 'Batken', 'Bishkek', 'Burana Tower', 'Cholpon-Ata', 'Chon-Kemin', 'Issyk-Kul', 'Jalalabad', 'Karakol'
+    ]
+
     return (
         <div className={styles.Content}>
 
@@ -81,7 +85,7 @@ const ContentBlog = () => {
                         <h4>Kyrgyzstan</h4>
                     </div>
                 </div>
-                <TravelDestination/>
+                <TravelDestination items={destinations}/>
             </div>
         </div>
     );
