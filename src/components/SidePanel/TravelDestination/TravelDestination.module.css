@@ -23,9 +23,3 @@
     color: #1CAC78;
 }
 
-
-@media (max-width: 1150px) {
-    .TravelDestinations {
-        display: none;
-    }
-}
