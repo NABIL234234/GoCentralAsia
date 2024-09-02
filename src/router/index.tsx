@@ -5,6 +5,7 @@ import ConditionsPage from "../pages/ConditionsPage";
 import Karakol from "../pages/Karakol/Karakol.tsx";
 import Transfers from "../pages/Transfers/Transfers.tsx";
 import GroupTours from "../pages/GroupTours/GroupTours.tsx";
+import JalalAbad from "../pages/JalalAbad/JalalAbad.tsx";
 
 const routes = [
     {path: '/', element: <Home/>},
@@ -13,6 +14,8 @@ const routes = [
     {path: '/karakol', element: <Karakol/>},
     {path: '/transfers', element: <Transfers/>},
     {path: '/grouptours', element: <GroupTours/>},
+    {path: '/jalalabad', element: <JalalAbad/>},
+
 
 
 

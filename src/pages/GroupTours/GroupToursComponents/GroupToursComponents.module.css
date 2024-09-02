@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 0 20px; /* Добавляем отступы по бокам */
+    padding: 0 20px;
 }
 
 .titile__group {
@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 20px; /* Добавляем отступы по бокам */
+    padding: 0 20px;
 }
 
 .bg__group h2 {
@@ -27,7 +27,7 @@
     line-height: 76px;
     color: white;
     margin-top: 100px;
-    margin-bottom: 16px; /* Уменьшение отступов для мобильных */
+    margin-bottom: 16px;
 }
 
 .bg__group span {
@@ -41,20 +41,20 @@
 
 @media (max-width: 768px) {
     .bg__group {
-        height: auto; /* Автоматическая высота для адаптивности */
-        padding: 50px 20px; /* Отступы вокруг контента */
-        background-position: top center; /* Сместим изображение к верху */
+        height: auto;
+        padding: 50px 20px;
+        background-position: top center;
     }
 
     .bg__group h2 {
         font-size: 48px;
         line-height: 56px;
-        margin-top: 20px; /* Уменьшаем отступ сверху */
+        margin-top: 20px;
     }
 
     .bg__group span {
         font-size: 18px;
         line-height: 20px;
-        margin-bottom: 20px; /* Уменьшаем отступ снизу */
+        margin-bottom: 20px;
     }
 }

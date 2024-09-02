@@ -1,0 +1,96 @@
+
+.bg__jal {
+    background-image: url("../../../assets/Images/bgjal.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 468px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.bg__jal h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 76px;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 16px;
+}
+
+.description__jal {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.span {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@media (min-width: 768px) {
+    .bg__jal {
+        height: 600px;
+    }
+
+    .bg__jal h2 {
+        font-size: 72px;
+        line-height: 88px;
+    }
+
+    .description__jal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .span {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bg__jal {
+        height: 300px;
+    }
+
+    .bg__jal h2 {
+        font-size: 48px;
+        line-height: 58px;
+        margin-top: 50px;
+    }
+
+    .description__jal {
+        padding: 16px;
+    }
+
+    .span {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bg__jal {
+        height: 250px;
+    }
+
+    .bg__jal h2 {
+        font-size: 36px;
+        line-height: 44px;
+        margin-top: 30px;
+    }
+
+    .span {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
