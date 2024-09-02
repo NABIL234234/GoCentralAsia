@@ -10,13 +10,13 @@ import BlogTourismPage from "../pages/BlogTourismPage";
 
 const routes = [
     {path: '/', element: <Home/>},
-    {path: '/desitination', element: <DestinationPage/>},
+    {path: '/destination', element: <DestinationPage/>},
     {path: '/conditions', element: <ConditionsPage/>},
-    {path: '/TermsPrivacyPolicy', element: <TermsPrivacyPolicyPage/>},
-    {path: '/ContactUs', element: <ContactUsPage/>},
-    {path: '/AboutUs', element: <AboutUsPage/>},
-    {path: '/Blog', element: <BlogPage/>},
-    {path: '/BlogTourism', element: <BlogTourismPage/>},
+    {path: '/terms-privacy-policy', element: <TermsPrivacyPolicyPage/>},
+    {path: '/contact-us', element: <ContactUsPage/>},
+    {path: '/about-us', element: <AboutUsPage/>},
+    {path: '/blog', element: <BlogPage/>},
+    {path: '/blog-tourism', element: <BlogTourismPage/>},
 ];
 
 const RouterView = () => {
