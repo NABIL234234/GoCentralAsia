@@ -4,8 +4,8 @@ import styles from './CentralAsiaTours.module.css';
 import Title from "../../../components/Global/Title/Title.tsx";
 
 //images
-import River from '../../../assets/Images/CA_photo1.jpg';
-import Mountain from "../../../assets/Images/CA_photo2.jpg";
+import River from '../../../assets/Images/CA_photo1.png';
+import Mountain from "../../../assets/Images/CA_photo2.png";
 import CentralAsiaToursAdaptive from "./CentralAsiaToursAdaptive/CentralAsiaToursAdaptive.tsx";
 
 function CentralAsiaTours() {

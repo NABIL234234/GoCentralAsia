@@ -7,7 +7,7 @@
 }
 
 .container {
-    max-width: 1360px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 100px;
 }
@@ -398,8 +398,7 @@
     }
 }
 
-@media (max-width: 680px) {
-
+@media (max-width: 700px) {
     .LogoContainer h2{
         font-size: 12px;
     }
@@ -416,7 +415,7 @@
     .adventure {
         top: 640px;
         width: 85%;
-        padding: 24px;
+        padding: 16px;
     }
 
     .adventureSorting {
