@@ -1,0 +1,112 @@
+.Container {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 100px;
+    gap: 82px;
+}
+
+.Container_Bl {
+    max-width: 843px;
+}
+
+.Bl_h2 {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    font-family: 'Bebas Neue', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.Bl_Con {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(28, 172, 120, 1);
+    margin: 0;
+    padding: 0;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+}
+
+.p_span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+.Block_Dot {
+    display: flex;
+    gap: 10px;
+}
+
+.Block_Icons {
+    display: flex;
+    gap: 16px;
+    padding-top: 16px;
+}
+
+.Con_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 44px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 0 10px 0;
+    gap: 8px;
+    background: rgba(28, 172, 120, 1);
+    transition: 0.3s ease;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #fff;
+}
+
+.button_img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.destination {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 24px;
+    gap: 16px;
+    max-height: 254px;
+    max-width: 295px;
+    width: 100%;
+}
+
+@media (max-width: 760px) {
+    .Container {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 450px) {
+    .destination {
+        width: 85%;
+    }
+
+    .Con_button {
+        width: 100%;
+    }
+}

@@ -1,12 +1,11 @@
+/* Общие стили футера */
 .footer {
     background-color: #009c70;
     color: white;
     padding: 20px 0;
-    margin-top: 60px;
-    width: 100%;
 }
 
-.container__footer {
+.container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -43,6 +42,12 @@
     min-width: 200px;
     margin-bottom: 20px;
     transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 400;
+    align-items: center; /* Центрируем содержимое по горизонтали */
+    text-align: center; /* Центрируем текст */
 }
 
 .footerInfo h4,
@@ -70,6 +75,7 @@
     color: white;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
+    font-weight: 400;
 }
 
 .footerInfo ul li a:hover,
@@ -96,49 +102,11 @@
     margin: 0;
 }
 
-
-@media (max-width: 768px) {
-
-    .container__footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footerLinks{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footerLinks h4 {
-        margin-left: 4px;
-    }
-
-    .footerLogo {
-        margin-right: 0;
-    }
-
-    .footerLogo img {
-        width: 60px;
-    }
-
-    .footerBottom {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footerSocial {
-        margin-top: 10px;
-    }
-}
-
-@media (min-width: 681px) and (max-width: 1024px) {
-    .footerContainer {
-        padding: 15px;
-        gap: 10px;
+/* Широкие экраны (от 1200px до 1024px) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .container {
+        padding: 20px 40px; /* Уменьшение отступов */
+        gap: 15px; /* Снижение промежутков */
     }
 
     .footerLogo img {
@@ -158,8 +126,99 @@
     }
 }
 
+/* Планшеты и экраны от 768px до 1024px */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .container {
+        padding: 20px; /* Уменьшенные отступы */
+        gap: 20px; /* Увеличение промежутков для лучшего восприятия */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-@media (max-width: 680px) {
+    .footerLogo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footerLogo img {
+        width: 60px;
+    }
+
+    .footerInfo,
+    .footerLinks {
+        width: 100%; /* Увеличиваем ширину для лучшего отображения */
+        max-width: 300px; /* Ограничиваем максимальную ширину */
+    }
+
+    .footerLinks ul {
+        display: flex;
+        flex-direction: column; /* Меняем направление на колонку */
+        align-items: center; /* Центрируем ссылки по горизонтали */
+        gap: 10px; /* Добавляем промежутки между ссылками */
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px; /* Уменьшение отступов */
+    }
+
+    .footerSocial {
+        margin-top: 10px;
+    }
+}
+
+/* Мобильные устройства от 481px до 768px */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .footerLogo {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footerLogo img {
+        width: 60px;
+    }
+
+    .footerInfo,
+    .footerLinks {
+        width: 100%; /* Увеличиваем ширину для лучшего отображения */
+        max-width: 300px; /* Ограничиваем максимальную ширину */
+    }
+
+    .footerLinks ul {
+        display: flex;
+        flex-direction: column; /* Меняем направление на колонку */
+        align-items: center; /* Центрируем ссылки по горизонтали */
+        gap: 10px; /* Добавляем промежутки между ссылками */
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footerSocial {
+        margin-top: 10px;
+    }
+}
+
+/* Очень маленькие экраны до 480px */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        gap: 10px;
+    }
+
     .footerLogo img {
         width: 50px;
     }
@@ -168,18 +227,11 @@
         font-size: 1.2em;
     }
 
-    .container {
-        padding: 10px;
+    .footerInfo {
+        display: none;
     }
 
     .footerBottom {
         padding: 10px;
     }
-
-    .footerInfo {
-        display: none;
-    }
 }
-
-
-

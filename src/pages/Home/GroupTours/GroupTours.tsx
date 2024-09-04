@@ -45,7 +45,7 @@ function GroupTours() {
             <h5>Tajikistan</h5>
             <h5>Turkmenistan</h5>
           </div>
-          <div className={styles.tour_cards}>
+         6 <div className={styles.tour_cards}>
             {tourData.map((tour, index) => (
               <TourCard
                 key={index}

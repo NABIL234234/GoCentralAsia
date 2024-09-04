@@ -1,0 +1,43 @@
+.PolicyContainer{
+    max-width: 843px;
+
+    margin: 25px 0 90px;
+}
+
+.PolicyContainer_h2{
+    color: rgba(56, 56, 56, 1);
+
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+
+    padding: 0 0 8px 0;
+    margin: 0;
+}
+
+.PolicyContainer_Con{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.Min_p{
+    color: rgba(74, 76, 75, 1);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+    padding: 0;
+    margin: 0;
+}
+.Min_h3{
+    color: rgba(74, 76, 75, 1);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+
+    padding: 0;
+    margin: 0;
+}
