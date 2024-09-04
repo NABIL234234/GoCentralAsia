@@ -85,7 +85,7 @@ const ContentBlog = () => {
                         <h4>Kyrgyzstan</h4>
                     </div>
                 </div>
-                <TravelDestination items={destinations}/>
+                <TravelDestination destinations={destinations}/>
             </div>
         </div>
     );

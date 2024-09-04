@@ -9,6 +9,7 @@ import BlogPage from "../pages/BlogPage";
 import BlogTourismPage from "../pages/BlogTourismPage";
 import Karakol from "../pages/Karakol/Karakol.tsx";
 import JalalAbad from "../pages/JalalAbad/JalalAbad.tsx";
+import GroupTours from '../pages/GroupTours/GroupTours.tsx'
 import Transfers from "../pages/Transfers/Transfers.tsx";
 
 const routes = [
@@ -17,8 +18,9 @@ const routes = [
     {path: '/conditions', element: <ConditionsPage/>},
     {path: '/terms-privacy-policy', element: <TermsPrivacyPolicyPage/>},
     {path: '/karakol', element: <Karakol /> },
+    {path: '/transfers', element: <Transfers />},
+    {path: '/group-tours', element: <GroupTours />},
     {path: '/jalal-abad', element: <JalalAbad /> },
-    {path: '/tranfers', element: <Transfers />},
     {path: '/contact-us', element: <ContactUsPage/>},
     {path: '/about-us', element: <AboutUsPage/>},
     {path: '/blog', element: <BlogPage/>},

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Hero.module.css';
 
 // компоненты
@@ -9,11 +9,12 @@ import Menu from '../../../components/Global/Menu/Menu.tsx';  // Импорти�
 import Logo from "../../../assets/Images/Logo.png";
 
 // иконки
-import {FaInstagram, FaWhatsapp, FaYoutube, FaPhone, FaCalendarAlt} from "react-icons/fa";
-import {CiMail, CiSearch} from "react-icons/ci";
-import {HiOutlineQuestionMarkCircle} from "react-icons/hi";
-import {IoMdArrowDropdown} from "react-icons/io";
-import {PiFlowArrow, PiHardDrives} from "react-icons/pi";
+import { FaInstagram, FaWhatsapp, FaYoutube, FaPhone, FaCalendarAlt } from "react-icons/fa";
+import { CiMail, CiSearch } from "react-icons/ci";
+import { HiOutlineQuestionMarkCircle } from "react-icons/hi";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { PiFlowArrow, PiHardDrives } from "react-icons/pi";
+import { NavLink } from 'react-router-dom';  // Импорт NavLink
 
 const Hero: React.FC = () => {
     const [isDestinationModalOpen, setDestinationModalOpen] = useState(false);
@@ -84,32 +85,31 @@ const Hero: React.FC = () => {
                         </div>
                         <div className={styles.navigationContainer}>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><span onClick={handleDestinationClick}>Destination <IoMdArrowDropdown/></span>
-                                </li>
+                                <li><NavLink to="/" className={styles.navigationLink}>Home</NavLink></li>
+                                <li><span onClick={handleDestinationClick}>Destination <IoMdArrowDropdown/></span></li>
                                 <li><span onClick={handleTourClick}>Tour <IoMdArrowDropdown/></span></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><NavLink to="/blog" className={styles.navigationLink}>Blog</NavLink></li>
+                                <li><NavLink to="/about-us" className={styles.navigationLink}>About us</NavLink></li>
+                                <li><NavLink to="/contact-us" className={styles.navigationLink}>Contact Us</NavLink></li>
                             </ul>
                             {(isDestinationModalOpen || isTourModalOpen) && (
                                 <div className={styles.dropdownModals} ref={clickRef}>
                                     {isDestinationModalOpen && (
                                         <div className={styles.dropdownModalDestination} ref={destinationModalRef}>
                                             <ul>
-                                                <li><a href="#">Central Asia</a></li>
-                                                <li><a href="#">Kyrgyzstan</a></li>
-                                                <li><a href="#">Kazakhstan</a></li>
-                                                <li><a href="#">Uzbekistan</a></li>
+                                                <li><NavLink to="/destination/central-asia" className={styles.dropdownItem}>Central Asia</NavLink></li>
+                                                <li><NavLink to="/destination/kyrgyzstan" className={styles.dropdownItem}>Kyrgyzstan</NavLink></li>
+                                                <li><NavLink to="/destination/kazakhstan" className={styles.dropdownItem}>Kazakhstan</NavLink></li>
+                                                <li><NavLink to="/destination/uzbekistan" className={styles.dropdownItem}>Uzbekistan</NavLink></li>
                                             </ul>
                                         </div>
                                     )}
                                     {isTourModalOpen && (
                                         <div className={styles.dropdownModalTour} ref={tourModalRef}>
                                             <ul>
-                                                <li><a href="#">Adventure Tours</a></li>
-                                                <li><a href="#">Cultural Tours</a></li>
-                                                <li><a href="#">Nature Tours</a></li>
+                                                <li><NavLink to="/tours/adventure" className={styles.dropdownItem}>Adventure Tours</NavLink></li>
+                                                <li><NavLink to="/tours/cultural" className={styles.dropdownItem}>Cultural Tours</NavLink></li>
+                                                <li><NavLink to="/tours/nature" className={styles.dropdownItem}>Nature Tours</NavLink></li>
                                             </ul>
                                         </div>
                                     )}

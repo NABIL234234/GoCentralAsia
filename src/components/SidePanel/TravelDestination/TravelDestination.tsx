@@ -3,6 +3,7 @@ import styles from "./TravelDestination.module.css";
 interface TravelDestinationProps {
     destinations: string[];
     title?: string;
+    className?: string;
 }
 
 const TravelDestination: React.FC<TravelDestinationProps> = ({ destinations, title = "Travel Destinations" }) => {

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { NavLink } from 'react-router-dom'; // Импорт NavLink
 import styles from './Header.module.css';
 import Menu from '../../components/Global/Menu/Menu.tsx';
 import Logo from '../../assets/Images/GreenLogo.jpg';
@@ -57,91 +58,90 @@ function Header() {
   }, []);
 
   return (
-    <header className={styles.header}>
-      <div className={styles.container}>
-        <div className={styles.upperHeader}>
-          <div className={styles.contactContainer}>
-            <div className={styles.flex}>
-              <FaPhone />
-              <a href="tel:+996700015599">+996 700 01 55 99</a>
-            </div>
-            <div className={styles.flex2}>
-              <CiMail />
-              <a href="mailto:Gocentralasia@gmail.com">Gocentralasia@gmail.com</a>
-            </div>
-            <div className={styles.flex3}>
-              <HiOutlineQuestionMarkCircle />
-              <a href="#">FAQ</a>
-            </div>
-          </div>
-          <div className={styles.socialContainer}>
-            <FaInstagram />
-            <FaWhatsapp />
-            <FaYoutube />
-          </div>
-        </div>
-        <div className={styles.headerRow}>
-          <div className={styles.logoContainer}>
-            <img src={Logo} alt="logo" />
-            <h2>Gocentralasia</h2>
-          </div>
-          <div className={styles.navigationContainer}>
-            <ul>
-              <li><a className={styles.navigationLink} href="#">Home</a></li>
-              <li><span onClick={handleDestinationClick}>Destination <IoMdArrowDropdown /></span></li>
-              <li><span onClick={handleTourClick}>Tour <IoMdArrowDropdown /></span></li>
-              <li><a className={styles.navigationLink} href="#">Blog</a></li>
-              <li><a className={styles.navigationLink} href="#">About us</a></li>
-              <li><a className={styles.navigationLink} href="#">Contact Us</a></li>
-            </ul>
-            {(isDestinationModalOpen || isTourModalOpen) && (
-              <div className={styles.dropdownModals} ref={clickRef}>
-                {isDestinationModalOpen && (
-                  <div className={styles.dropdownModalDestination} ref={destinationModalRef}>
-                    <ul>
-                      <li><a className={styles.dropdownItem} href="#">Central Asia</a></li>
-                      <li><a className={styles.dropdownItem} href="#">Kyrgyzstan</a></li>
-                      <li><a className={styles.dropdownItem} href="#">Kazakhstan</a></li>
-                      <li><a className={styles.dropdownItem} href="#">Uzbekistan</a></li>
-                    </ul>
-                  </div>
-                )}
-                {isTourModalOpen && (
-                  <div className={styles.dropdownModalTour} ref={tourModalRef}>
-                    <ul>
-                      <li><a className={styles.dropdownItem} href="#">Adventure Tours</a></li>
-                      <li><a className={styles.dropdownItem} href="#">Cultural Tours</a></li>
-                      <li><a className={styles.dropdownItem} href="#">Nature Tours</a></li>
-                    </ul>
-                  </div>
-                )}
+      <header className={styles.header}>
+        <div className={styles.container}>
+          <div className={styles.upperHeader}>
+            <div className={styles.contactContainer}>
+              <div className={styles.flex}>
+                <FaPhone />
+                <a href="tel:+996700015599">+996 700 01 55 99</a>
               </div>
-            )}
-          </div>
-          <div className={styles.searchLanguageContainer}>
-            <div className={styles.searchContainer}>
-              <CiSearch className={styles.searchIcon} />
+              <div className={styles.flex2}>
+                <CiMail />
+                <a href="mailto:Gocentralasia@gmail.com">Gocentralasia@gmail.com</a>
+              </div>
+              <div className={styles.flex3}>
+                <HiOutlineQuestionMarkCircle />
+                <a href="#">FAQ</a>
+              </div>
             </div>
-            <div className={styles.languageContainer}>
-              <h3>ENG</h3>
-              <IoMdArrowDropdown className={styles.dropDown} />
+            <div className={styles.socialContainer}>
+              <FaInstagram />
+              <FaWhatsapp />
+              <FaYoutube />
             </div>
           </div>
-          <div className={styles.mobileNav}>
-
-            <button
-              className={`${styles['burger-btn']} ${hideBurger ? styles['hidden'] : ''}`}
-              onClick={toggleMenu}
-            >
-              <span className={`${styles.line} ${menuOpen ? styles['line1'] : ''}`}></span>
-              <span className={`${styles.line} ${menuOpen ? styles['line2'] : ''}`}></span>
-              <span className={`${styles.line} ${menuOpen ? styles['line3'] : ''}`}></span>
-            </button>
+          <div className={styles.headerRow}>
+            <div className={styles.logoContainer}>
+              <img src={Logo} alt="logo" />
+              <h2>Gocentralasia</h2>
+            </div>
+            <div className={styles.navigationContainer}>
+              <ul>
+                <li><NavLink className={styles.navigationLink} to="/">Home</NavLink></li>
+                <li><span onClick={handleDestinationClick}>Destination <IoMdArrowDropdown /></span></li>
+                <li><span onClick={handleTourClick}>Tour <IoMdArrowDropdown /></span></li>
+                <li><NavLink className={styles.navigationLink} to="/blog">Blog</NavLink></li>
+                <li><NavLink className={styles.navigationLink} to="/about-us">About us</NavLink></li>
+                <li><NavLink className={styles.navigationLink} to="/contact-us">Contact Us</NavLink></li>
+              </ul>
+              {(isDestinationModalOpen || isTourModalOpen) && (
+                  <div className={styles.dropdownModals} ref={clickRef}>
+                    {isDestinationModalOpen && (
+                        <div className={styles.dropdownModalDestination} ref={destinationModalRef}>
+                          <ul>
+                            <li><NavLink className={styles.dropdownItem} to="/destination/central-asia">Central Asia</NavLink></li>
+                            <li><NavLink className={styles.dropdownItem} to="/destination/kyrgyzstan">Kyrgyzstan</NavLink></li>
+                            <li><NavLink className={styles.dropdownItem} to="/destination/kazakhstan">Kazakhstan</NavLink></li>
+                            <li><NavLink className={styles.dropdownItem} to="/destination/uzbekistan">Uzbekistan</NavLink></li>
+                          </ul>
+                        </div>
+                    )}
+                    {isTourModalOpen && (
+                        <div className={styles.dropdownModalTour} ref={tourModalRef}>
+                          <ul>
+                            <li><NavLink className={styles.dropdownItem} to="/tours/adventure">Adventure Tours</NavLink></li>
+                            <li><NavLink className={styles.dropdownItem} to="/tours/cultural">Cultural Tours</NavLink></li>
+                            <li><NavLink className={styles.dropdownItem} to="/tours/nature">Nature Tours</NavLink></li>
+                          </ul>
+                        </div>
+                    )}
+                  </div>
+              )}
+            </div>
+            <div className={styles.searchLanguageContainer}>
+              <div className={styles.searchContainer}>
+                <CiSearch className={styles.searchIcon} />
+              </div>
+              <div className={styles.languageContainer}>
+                <h3>ENG</h3>
+                <IoMdArrowDropdown className={styles.dropDown} />
+              </div>
+            </div>
+            <div className={styles.mobileNav}>
+              <button
+                  className={`${styles['burger-btn']} ${hideBurger ? styles['hidden'] : ''}`}
+                  onClick={toggleMenu}
+              >
+                <span className={`${styles.line} ${menuOpen ? styles['line1'] : ''}`}></span>
+                <span className={`${styles.line} ${menuOpen ? styles['line2'] : ''}`}></span>
+                <span className={`${styles.line} ${menuOpen ? styles['line3'] : ''}`}></span>
+              </button>
+            </div>
           </div>
+          <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
         </div>
-        <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
-      </div>
-    </header>
+      </header>
   );
 }
 

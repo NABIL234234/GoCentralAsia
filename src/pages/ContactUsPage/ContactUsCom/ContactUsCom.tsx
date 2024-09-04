@@ -94,7 +94,7 @@ const ContactUsCom = () => {
           </div>
         </div>
       </div>
-        <TravelDestination title="Destinations" items={destinations} className={styles.destination}/>
+        <TravelDestination title="Destinations" destinations={destinations} className={styles.destination}/>
     </div>
   );
 };

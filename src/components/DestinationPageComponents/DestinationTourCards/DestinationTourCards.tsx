@@ -1,4 +1,4 @@
-import Title from "../../Global/Title/Title.tsx";
+
 import styles from "./DestinationTourCards.module.css";
 import TourCard from "../../homePageComponets/TourCard/TourCard.tsx";
 
@@ -17,7 +17,7 @@ interface DestinationTourCardsProps {
 const DestinationTourCards: React.FC<DestinationTourCardsProps> = ({ tourData }) => {
     return (
         <div>
-            <Title mainText="Kyrgyzstan Group Tours" className={styles.titleText} />
+
             <div className={styles.tour_cards_groupTours}>
                 {tourData?.map((tour, index) => (
                     <TourCard
