@@ -8,7 +8,7 @@ import TravelDestination from "../../../components/SidePanel/TravelDestination/T
 
 const AboutUsIntroduction = () => {
 
-  const destinations = ['Kyrgyzstan', 'Kazakhstan', 'Uzbekistan', 'Tajikistan', 'Turkmenistan'];
+  const destinations = ['Kyrgyzstan', 'Kazakhstan', 'Uzbekistan', 'Tajikistan', 'Turkmenistan' ];
 
   return <div className={styles.AboutUsIntroduction_Con}>
     <div className={styles.Con_Bl}>

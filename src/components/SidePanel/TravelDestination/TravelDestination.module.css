@@ -2,9 +2,10 @@
     width: 315px;
     border: 1px solid #E8E8E8;
     border-radius: 8px;
-    margin: 0 auto;
-    padding: 16px;
+    margin: 0 auto; /* Центрируем на больших экранах */
+    padding: 24px;
     background-color: #fff;
+    height: 100%;
 }
 
 .TravelDestinations h3 {
@@ -28,17 +29,16 @@
     cursor: pointer;
     list-style-type: none;
     padding-left: 24px;
-    transition: color 0.3s ease; /* Добавляем плавный переход цвета */
+    transition: color 0.3s ease;
 }
 
 .TravelDestinations li:hover {
     color: #1CAC78;
 }
 
-/* Адаптивные стили */
 @media (max-width: 1024px) {
     .TravelDestinations {
-        width: 100%;
+        width: 315px;
         padding: 16px;
     }
 
@@ -52,11 +52,12 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .TravelDestinations {
-        width: 100%;
+        width: 50%;
         padding: 12px;
         border-radius: 6px;
+        margin: 0;
     }
 
     .TravelDestinations h3 {
@@ -72,7 +73,9 @@
 
 @media (max-width: 480px) {
     .TravelDestinations {
+        width: 50%;
         padding: 12px;
+        margin: 0;
     }
 
     .TravelDestinations h3 {
