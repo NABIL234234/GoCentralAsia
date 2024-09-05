@@ -17,7 +17,7 @@ const routes = [
     {path: '/destination', element: <DestinationPage/>},
     {path: '/conditions', element: <ConditionsPage/>},
     {path: '/terms-privacy-policy', element: <TermsPrivacyPolicyPage/>},
-    {path: '/karakol', element: <Karakol /> },
+    {path: '/kara-kol', element: <Karakol /> },
     {path: '/transfers', element: <Transfers />},
     {path: '/group-tours', element: <GroupTours />},
     {path: '/jalal-abad', element: <JalalAbad /> },
